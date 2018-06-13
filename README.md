@@ -35,3 +35,11 @@ components are necessary.
    the right touch controller. Started script for haptic feedback, and still
    working on getting the absolute movement to work.
    Work Hours: 9-5 
+
+   06/13/18: Have a prototype movement system where one controller is the origin and 
+   the other is your relative position to the origin. When the relative 
+   position controller is near the origin, it vibrates. if within 
+   vibrating radius for 3 seconds, the origin and realtive postition 
+   controllers switch hands. A and B on the right controller still
+   scales the model.
+   Work Hours: 9-5
