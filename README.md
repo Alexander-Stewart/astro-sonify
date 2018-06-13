@@ -20,3 +20,18 @@ components are necessary.
    
 3. Sound control: pitch, timbre, volume, whatever, as a function of
    position. 
+
+
+
+---------------------------------------------------------------------
+   ALEX DAILY LOG:
+   06/11/18: Started movement system and converted to SteamVR. 
+   Looked at VRTK and need to discuss if we should use, has benifits 
+   and drawbacks. Relative movement on one controller works, but need 
+   to implement movement absolutely.
+   Work Hours: 10-6
+
+   06/12/18: Can now scale model up or down using the A and B buttons on 
+   the right touch controller. Started script for haptic feedback, and still
+   working on getting the absolute movement to work.
+   Work Hours: 9-5 
