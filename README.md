@@ -20,8 +20,12 @@ components are necessary.
    
 3. Sound control: pitch, timbre, volume, whatever, as a function of
    position. 
-
-
+--------------------------------------------------------------------
+STEPS FOR SETUP:
+1. Open a new Unity Project, add the Project Files to the Assets folder in Unity.
+2. Go to the Assets Store, and download the SteamVR Assets. 
+3. Go to the Scences folder, and select a completed movement system to test. 
+   Each completed scene has a different movement system inside. 
 
 ---------------------------------------------------------------------
    ALEX DAILY LOG:
