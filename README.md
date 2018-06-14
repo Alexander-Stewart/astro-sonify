@@ -43,3 +43,8 @@ components are necessary.
    controllers switch hands. A and B on the right controller still
    scales the model.
    Work Hours: 9-5
+   
+   06/14/18: Set up new github branches and added important Unity files for backup. 
+   Added Preprocessor Directives but need to improve for easier changing between 
+   which testable movement system is to be used. Started on second movement system.
+   Work Hours: 9-5
