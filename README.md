@@ -48,3 +48,14 @@ components are necessary.
    Added Preprocessor Directives but need to improve for easier changing between 
    which testable movement system is to be used. Started on second movement system.
    Work Hours: 9-5
+   
+   06/14/18: Continued working on second movement system. Now camera can track between left and 
+   right controllers, as well as switch between the two. stlll working on a way to have relative position now,
+   as well as a way to tell when the person is near the origin of the super nova. Below are the added and changed
+   scripts:
+   Added these new scripts:
+- NegateTracking
+- FindCenter
+Updated These Scripts:
+- NearOrigin
+Work Hours: 9-4
