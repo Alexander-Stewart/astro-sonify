@@ -4,7 +4,7 @@ using UnityEngine;
 using VRTK;
 
 public class ScaleSuperNova : MonoBehaviour {
-//#if MS1
+#if MS1
     protected VRTK_ControllerEvents controllerEvents;
     public GameObject superNovaLeft;
     public GameObject superNovaRight;
@@ -45,5 +45,30 @@ public class ScaleSuperNova : MonoBehaviour {
             }
         }
 	}
-//#endif
+#elif MS2
+    protected VRTK_ControllerEvents controllerEvents;
+    public GameObject superNova;
+    public float scaleFactor;
+    public float lowerBound;
+    public float upperBound;
+
+    void Awake()
+    {
+        controllerEvents = GetComponent<VRTK_ControllerEvents>();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+            float size = superNova.transform.localScale.x;
+            if (controllerEvents.buttonOnePressed && !(controllerEvents.buttonTwoPressed && size < upperBound))
+            {
+                superNova.transform.localScale += Vector3.one * Time.deltaTime * scaleFactor; ;
+            }
+            else if (controllerEvents.buttonTwoPressed && !(controllerEvents.buttonOnePressed) && size > lowerBound)
+            {
+                superNova.transform.localScale -= Vector3.one * Time.deltaTime * scaleFactor;
+            }
+    }
+#endif
 }
