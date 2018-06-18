@@ -59,3 +59,6 @@ components are necessary.
 Updated These Scripts:
 - NearOrigin
 Work Hours: 9-4
+
+06/18/18: Tested out the RealSpace3DAudio plug-in, and compared it to the Steam Audio plug-in that has similar features. I found RealSpace3DAudio easier to use once set up. Added a word document outlining my thoughts and what I found about RealSpace3dAudio. Tried to add haptic feedback for when at actual center of super nova for MS2, but it would stop other haptic feedback from working, will fix tomorrow. 
+Work Hours: 9-5
