@@ -6,78 +6,66 @@ using VRTK;
 
 public class FindCenter : MonoBehaviour {
 
-    // in FindCenter, have onTriggerStay active, and then allow for 
-    // teleport that moves player to center(re-center)
-    // give haptic feedback to controllers to let them know they are inside the center.
+    /**
+     * The FindCenter class is for finding the center of the 
+     * super nova in the MS2 system. 
+     **/
 
-    public GameObject leftHand;
-    public GameObject rightHand;
-
-    private GameObject leftHandModel;
-
-    private SteamVR_TrackedObject trackedRightHand;
-    private SteamVR_TrackedObject trackedLeftHand;
-
-    private SteamVR_Controller.Device device1;
-    private SteamVR_Controller.Device device2;
+   
+    private VRTK_InteractableObject io;
+    private VRTK_ControllerReference controllerReference;
 
     // Use this for initialization
-    void Start () {
-        // getting tracked object components
-        trackedRightHand = rightHand.GetComponent<SteamVR_TrackedObject>();
-        trackedLeftHand = leftHand.GetComponent<SteamVR_TrackedObject>();
-
-        //getting left hand model
-        leftHandModel = leftHand.transform.GetChild(0).gameObject;
-
-        device1 = SteamVR_Controller.Input((int)trackedRightHand.index);
-        device2 = SteamVR_Controller.Input((int)trackedLeftHand.index);
-
+    void Update () {
+        transform.localPosition = Vector3.zero;
     }
-	
 
-    void OnTriggerStay(Collider Other)
+    void OnEnable()
     {
-
-        if(!leftHandModel.activeSelf && Other.tag == "LeftController")
-        {
-            Debug.Log("Left hand found center of Super Nova");
-            // left hand is device2
-            device2 = SteamVR_Controller.Input((int)trackedLeftHand.index);
-            StartCoroutine("PulseVibration");
-        } else if (leftHandModel.activeSelf && Other.tag == "RightController")
-        {
-            Debug.Log("Left hand found center of Super Nova");
-            // right hand is device1
-            device1 = SteamVR_Controller.Input((int)trackedRightHand.index);
-            StartCoroutine("PulseVibration");
-        }
-    }
-   
-    void OnTriggerExit(Collider Other)
-    {
-        if(!leftHandModel.activeSelf && Other.tag == "LeftController")
-        {
-            StopCoroutine("PulseVibration");
-        } else if (leftHandModel.activeSelf && Other.tag == "RightController")
-        {
-            StopCoroutine("PulseVibration");
-        }
+        io = GetComponent<VRTK_InteractableObject>();
+        io.InteractableObjectTouched += Io_InteractableObjectTouched;
+        io.InteractableObjectUntouched += Io_InteractableObjectUntouched;
     }
 
-    IEnumerator PulseVibration()
+    /**
+     * InteractableObjectUntouched is a method that is activated when one of the controllers
+     * leaves the interactable objects collider.
+     * @params: sender- the sender is the game object that is getting interacted with(io)
+     * @params: e- e is the object that is interacting with the io.
+     **/
+    private void Io_InteractableObjectUntouched(object sender, InteractableObjectEventArgs e)
     {
-        if (!leftHandModel.activeSelf)
-        {
-            device2 = SteamVR_Controller.Input((int)trackedLeftHand.index);
-            device2.TriggerHapticPulse(800);
-        }
-        else
-        {
-            device1 = SteamVR_Controller.Input((int)trackedRightHand.index);
-            device1.TriggerHapticPulse(800);
-        }
-        yield return new WaitForSeconds(8f);
+        Debug.Log("Untouched");
+        VRTK_ControllerHaptics.CancelHapticPulse(controllerReference);
+        controllerReference = null;
     }
+
+    /**
+     * InteractableObjectUntouched is a method that is activated when one of the controllers
+     * leaves the interactable objects collider.
+     * @params: sender- the sender is the game object that is getting interacted with(io)
+     * @params: e- e is the object that is interacting with the io.
+     **/
+    private void Io_InteractableObjectTouched(object sender, InteractableObjectEventArgs e)
+    {
+        Debug.Log("Touched");
+        controllerReference = VRTK_ControllerReference.GetControllerReference(e.interactingObject);
+        VRTK_ControllerHaptics.TriggerHapticPulse(controllerReference, 1f, 10f, 1f);
+    }
+
+ //   IEnumerator PulseVibration()
+ //   {
+ //       if (!leftHandModel.activeSelf)
+ //       {
+ //           device2 = SteamVR_Controller.Input((int)trackedLeftHand.index);
+ //           device2.TriggerHapticPulse(800);
+ //      }
+ //       else
+ //       {
+ //           device1 = SteamVR_Controller.Input((int)trackedRightHand.index);
+ //           device1.TriggerHapticPulse(800);
+ //       }
+ //       yield return new WaitForSeconds(8f);
+ //   }
 
 }

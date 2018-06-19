@@ -5,8 +5,14 @@ using Valve.VR.InteractionSystem;
 using VRTK;
 
 public class NearOrigin : MonoBehaviour {
-    // ALOT OF CODE BETWEEN MS1 AND MS2 IS THE SAME, GO IN AND PUT DIFFERENCES IN 
-    // PREPROCESSOR DIRECTIVES WITHIN THE METHODS!
+    /**
+     * NearOrigin is a script that handles haptic feedback
+     * for when the controllers are near each other,
+     * and also handles switching which controller is mainly
+     * used for movement/control in the Movement System.
+     * **I want to change many of the public game objects to private,
+     * but was having trouble getting them through script, will update later**
+     **/
 #if MS1
     public float delayTime;
     public ushort hapticStrength;
@@ -146,6 +152,9 @@ public class NearOrigin : MonoBehaviour {
     private GameObject rightModel;
 
     public GameObject leftHand;
+
+    private GameObject cameraRig;
+
     void Start()
     {
         // getting tracked object components
@@ -163,6 +172,10 @@ public class NearOrigin : MonoBehaviour {
         // getting the VRTK_TransformFollow components
         leftFollow = leftHand.GetComponent<VRTK_TransformFollow>();
         rightFollow = GetComponent<VRTK_TransformFollow>();
+
+        // getting cameraRig and childing the right hand.
+        cameraRig = transform.parent.gameObject;
+        ChildToObject(this.gameObject, false);
 
     }
 
@@ -189,7 +202,7 @@ public class NearOrigin : MonoBehaviour {
     {
         Debug.Log("Entered");
 
-        if (Other.tag == "LeftController")
+        if (Other.tag == "SensorLeft" || Other.tag == "SensorRight")
         {
             StartCoroutine("MyCoroutine");
             Debug.Log("Tagged");
@@ -201,7 +214,7 @@ public class NearOrigin : MonoBehaviour {
     {
         Debug.Log("Exited");
 
-        if (Other.tag == "LeftController")
+        if (Other.tag == "SensorLeft" || Other.tag == "SensorRight")
         {
             StopCoroutine("MyCoroutine");
 
@@ -223,7 +236,11 @@ public class NearOrigin : MonoBehaviour {
             rightModel.SetActive(false);
             leftModel.SetActive(true);
             rightFollow.enabled = true;
-         
+
+            // childing left hand and unchilding right
+            ChildToObject(this.gameObject, true);
+            ChildToObject(leftHand, false);
+            
             // updates vibration to right hand
             leftOrigin = false;
         }
@@ -236,9 +253,44 @@ public class NearOrigin : MonoBehaviour {
             rightModel.SetActive(true);
             leftFollow.enabled = true;
 
+            // childing right hand and unchilding left
+            ChildToObject(leftHand, true);
+            ChildToObject(this.gameObject, false);
 
             // updates vibration to left hand
             leftOrigin = true;
+        }
+    }
+
+    /**
+     * ChildToObject is a helper method that allows for a game object to 
+     * be set as a child to either the camera rig or the main camera.
+     * @params: hand- the hand game object is which hand you want to be added
+     * as a child
+     * @params: toCameraRig- a bool telling whether or not to add the child to
+     *  the camera rig.
+     **/
+    protected virtual void ChildToObject(GameObject hand, bool toCameraRig)
+    {
+        Vector3 currentPosition = hand.transform.localPosition;
+        Quaternion currentRotation = hand.transform.localRotation;
+        Vector3 currentScale = hand.transform.localScale;
+        Transform newParent = null;
+
+        if (toCameraRig)
+        {
+            newParent = cameraRig.transform;
+
+            hand.transform.SetParent(newParent);
+            hand.transform.localPosition = currentPosition;
+            hand.transform.localRotation = currentRotation;
+
+        } else
+        {
+            newParent = VRTK_DeviceFinder.HeadsetTransform();
+
+            hand.transform.SetParent(newParent);
+            hand.transform.localPosition = Vector3.zero;
         }
     }
 #endif

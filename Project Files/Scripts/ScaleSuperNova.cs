@@ -4,6 +4,10 @@ using UnityEngine;
 using VRTK;
 
 public class ScaleSuperNova : MonoBehaviour {
+    /**
+     * A class that scales the super nova up
+     * and down by time instead of instantly.
+     **/
 #if MS1
     protected VRTK_ControllerEvents controllerEvents;
     public GameObject superNovaLeft;

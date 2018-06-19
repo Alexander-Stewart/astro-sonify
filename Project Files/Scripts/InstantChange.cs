@@ -4,6 +4,10 @@ using UnityEngine;
 using VRTK;
 
 public class InstantChange : MonoBehaviour {
+    /**
+     * InstantChange is a script that isnstantly changes
+     * the size of the super nova.
+     **/
 //#if MS1
     // USES VRTK
 

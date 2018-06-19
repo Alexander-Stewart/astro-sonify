@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class MSLogger : MonoBehaviour {
-
+    /**
+     * MSLogger tells which movement system is
+     * being used with a message to the console.
+     **/
 	// Use this for initialization
 	void Awake () {
 #if MS1
