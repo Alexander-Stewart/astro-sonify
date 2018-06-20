@@ -20,7 +20,15 @@ components are necessary.
    
 3. Sound control: pitch, timbre, volume, whatever, as a function of
    position. 
+ 
+---------------------------------------------------------------------
+STEPS FOR SETUP:
 
+1. Open a new Unity Project, add the Project Files to the Assets folder in Unity.
+2. Go to the Assets Store, and download the SteamVR Assets.
+3. Download RealSpace3DAudio trial version from https://realspace3daudio.com, and import their assets folder.
+4. Go to File -> Build Settings -> Player Settings -> Scripting Define Symbols and type in either MS1 or MS2 into the text box.
+5. Go to the Scences folder, and select a the completed movement system that you selected in step 4 to test. Each completed scene has a different movement system inside. To switch Movement systems, repeat steps 4 and 5.
 
 
 ---------------------------------------------------------------------
@@ -62,3 +70,6 @@ Work Hours: 9-4
 
 06/18/18: Tested out the RealSpace3DAudio plug-in, and compared it to the Steam Audio plug-in that has similar features. I found RealSpace3DAudio easier to use once set up. Added a word document outlining my thoughts and what I found about RealSpace3dAudio. Tried to add haptic feedback for when at actual center of super nova for MS2, but it would stop other haptic feedback from working, will fix tomorrow. 
 Work Hours: 9-5
+
+06/19/18: Finished Movement System 2, and now have moved on to the audio portion of this project. Still looking to clean code and improve movement systems as well moving forward. Each script that is used has a comment at the top letting you know what it is used for. Will add to README tomorrow to have descriptions of each movement system and how everything fits together code wise and component wise on the game objects.
+Work Hours: 9-5:30
