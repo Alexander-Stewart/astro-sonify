@@ -175,7 +175,7 @@ public class NearOrigin : MonoBehaviour {
 
         // getting cameraRig and childing the right hand.
         cameraRig = transform.parent.gameObject;
-        ChildToObject(this.gameObject, false);
+        ChildToObject(this.gameObject, false, leftHand);
 
     }
 
@@ -238,8 +238,8 @@ public class NearOrigin : MonoBehaviour {
             rightFollow.enabled = true;
 
             // childing left hand and unchilding right
-            ChildToObject(this.gameObject, true);
-            ChildToObject(leftHand, false);
+            ChildToObject(this.gameObject, true, leftHand);
+            ChildToObject(leftHand, false, this.gameObject);
             
             // updates vibration to right hand
             leftOrigin = false;
@@ -254,8 +254,8 @@ public class NearOrigin : MonoBehaviour {
             leftFollow.enabled = true;
 
             // childing right hand and unchilding left
-            ChildToObject(leftHand, true);
-            ChildToObject(this.gameObject, false);
+            ChildToObject(leftHand, true, this.gameObject);
+            ChildToObject(this.gameObject, false, leftHand);
 
             // updates vibration to left hand
             leftOrigin = true;
@@ -270,7 +270,7 @@ public class NearOrigin : MonoBehaviour {
      * @params: toCameraRig- a bool telling whether or not to add the child to
      *  the camera rig.
      **/
-    protected virtual void ChildToObject(GameObject hand, bool toCameraRig)
+    protected virtual void ChildToObject(GameObject hand, bool toCameraRig, GameObject otherHand)
     {
         Vector3 currentPosition = hand.transform.localPosition;
         Quaternion currentRotation = hand.transform.localRotation;
@@ -287,7 +287,8 @@ public class NearOrigin : MonoBehaviour {
 
         } else
         {
-            newParent = VRTK_DeviceFinder.HeadsetTransform();
+            //newParent = VRTK_DeviceFinder.HeadsetTransform();
+            newParent = otherHand.transform;
 
             hand.transform.SetParent(newParent);
             hand.transform.localPosition = Vector3.zero;

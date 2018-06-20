@@ -247,6 +247,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4898129430836588}
+  - component: {fileID: 114068458463195136}
   m_Layer: 0
   m_Name: PlayArea
   m_TagString: Untagged
@@ -343,6 +344,7 @@ GameObject:
   - component: {fileID: 135183786112106268}
   - component: {fileID: 54768217884633620}
   - component: {fileID: 114908300060503552}
+  - component: {fileID: 114298646203054794}
   - component: {fileID: 114290462010899550}
   m_Layer: 0
   m_Name: Center
@@ -868,6 +870,27 @@ MonoBehaviour:
   verbose: 0
   createComponents: 1
   updateDynamically: 1
+--- !u!114 &114068458463195136
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1631932563254484}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 377ced3493c4e1842a5b1c23f56519db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blinkToColor: {r: 0, g: 0, b: 0, a: 1}
+  blinkTransitionSpeed: 0.6
+  distanceBlinkDelay: 0
+  headsetPositionCompensation: 1
+  targetListPolicy: {fileID: 0}
+  navMeshData: {fileID: 0}
+  navMeshLimitDistance: 0
+  snapToNearestFloor: 0
+  applyPlayareaParentOffset: 0
+  customRaycast: {fileID: 0}
 --- !u!114 &114088415110457606
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1049,6 +1072,17 @@ MonoBehaviour:
   objectHighlighter: {fileID: 0}
   touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
   usingState: 0
+--- !u!114 &114298646203054794
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1865039439508642}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a429b5cac3ea7df448345afc68e8b5ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114304761579904260
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1372,7 +1406,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 15
+  m_Radius: 10
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!135 &135588461826452834
 SphereCollider:
