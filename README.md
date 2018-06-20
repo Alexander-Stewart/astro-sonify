@@ -73,3 +73,6 @@ Work Hours: 9-5
 
 06/19/18: Finished Movement System 2, and now have moved on to the audio portion of this project. Still looking to clean code and improve movement systems as well moving forward. Each script that is used has a comment at the top letting you know what it is used for. Will add to README tomorrow to have descriptions of each movement system and how everything fits together code wise and component wise on the game objects.
 Work Hours: 9-5:30
+
+06/20/18: Continued to learn how to manipulate audio in Unity through built in Unity features and RealSpace3D audio. Turns out you can manipulate specific audio effects in the Audio Mixer, you just have to make sure you set it to be editable before trying to access it through scripting. TestSound scene now changes the audio for in multiple ways depending on distance, rotation and height above the listener. Also, need to find more about how Open Space Program handles audio for space and how they maniplate it, talk to David more? Lastly, fixed some aspects of MS2, can now rotate without the controller rotating awkwardly. All updated scripts, prefabs, and scenes have been added. 
+Work Hours: 9-3
