@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿//#define ALT
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Valve.VR.InteractionSystem;
@@ -31,7 +32,10 @@ public class NearOrigin : MonoBehaviour {
     //private VRTK_TransformFollow superNovaRight;
     public GameObject leftHand;
 
-    
+#if ALT
+    private VRTK_TransformFollow leftHandFollow;
+    private VRTK_TransformFollow rightHandFollow;
+#endif
 
     // Use this for initialization
     void Start()
@@ -48,11 +52,17 @@ public class NearOrigin : MonoBehaviour {
         // getting tracked object components
         trackedLeftHand = leftHand.GetComponent<SteamVR_TrackedObject>();
         trackedRightHand = GetComponent<SteamVR_TrackedObject>();
-        
+
+#if ALT
+        leftHandFollow = leftHand.GetComponent<VRTK_TransformFollow>();
+        rightHandFollow = GetComponent<VRTK_TransformFollow>();
+        leftHandFollow.enabled = false;
+#endif
+
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update () {
         device1 = SteamVR_Controller.Input((int)trackedRightHand.index);
         device2 = SteamVR_Controller.Input((int)trackedLeftHand.index);
         if (inOrigin)
@@ -98,6 +108,10 @@ public class NearOrigin : MonoBehaviour {
 
         if (leftOrigin)
         {
+#if ALT
+            rightHandFollow.enabled = false;
+            leftHandFollow.enabled = true;
+#endif
             // changes origin to right hand
             superNovaRightObject.SetActive(true);
             superNovaRightObject.transform.localScale = superNovaLeftObject.transform.localScale;
@@ -108,6 +122,10 @@ public class NearOrigin : MonoBehaviour {
             leftOrigin = false;
         } else
         {
+#if ALT
+            leftHandFollow.enabled = false;
+            rightHandFollow.enabled = true;
+#endif
             // switches origin to left hand
             superNovaLeftObject.SetActive(true);
             superNovaLeftObject.transform.localScale = superNovaRightObject.transform.localScale;
@@ -167,7 +185,7 @@ public class NearOrigin : MonoBehaviour {
 
         //setting up left model
         leftRender = leftModel.GetComponent<SteamVR_RenderModel>();
-        leftModel.SetActive(false);
+        //leftModel.SetActive(false); fix!
 
         // getting the VRTK_TransformFollow components
         leftFollow = leftHand.GetComponent<VRTK_TransformFollow>();
@@ -233,8 +251,8 @@ public class NearOrigin : MonoBehaviour {
             // changes origin to right hand
             leftFollow.enabled = false;
             yield return new WaitForSeconds(.5f);
-            rightModel.SetActive(false);
-            leftModel.SetActive(true);
+           // rightModel.SetActive(false); fix!
+           // leftModel.SetActive(true); fix!
             rightFollow.enabled = true;
 
             // childing left hand and unchilding right
@@ -249,8 +267,8 @@ public class NearOrigin : MonoBehaviour {
             // switches origin to left hand
             rightFollow.enabled = false;
             yield return new WaitForSeconds(.5f);
-            leftModel.SetActive(false);
-            rightModel.SetActive(true);
+            //leftModel.SetActive(false); fix!
+            //rightModel.SetActive(true); fix!
             leftFollow.enabled = true;
 
             // childing right hand and unchilding left
