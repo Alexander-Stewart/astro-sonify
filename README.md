@@ -76,3 +76,6 @@ Work Hours: 9-5:30
 
 06/20/18: Continued to learn how to manipulate audio in Unity through built in Unity features and RealSpace3D audio. Turns out you can manipulate specific audio effects in the Audio Mixer, you just have to make sure you set it to be editable before trying to access it through scripting. TestSound scene now changes the audio for in multiple ways depending on distance, rotation and height above the listener. Also, need to find more about how Open Space Program handles audio for space and how they maniplate it, talk to David more? Lastly, fixed some aspects of MS2, can now rotate without the controller rotating awkwardly. All updated scripts, prefabs, and scenes have been added. 
 Work Hours: 9-3
+
+06/21/18: Continued improving movement systems. MS1 is completely done, and there are two settings that need to be tested to see which is better. Starting learning about how to use Paraview, and trying to get the density data from the vtk file.
+work hours: 9-5
