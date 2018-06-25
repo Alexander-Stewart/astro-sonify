@@ -79,3 +79,6 @@ Work Hours: 9-3
 
 06/21/18: Continued improving movement systems. MS1 is completely done, and there are two settings that need to be tested to see which is better. Starting learning about how to use Paraview, and trying to get the density data from the vtk file.
 work hours: 9-5
+
+06/25/18: Created a function that generates a random spherical harmonic, and then writes it to a file. Also have a method that can read files, and takes each coordinate and density data pair and adds them to a hashtable. Working on incorporating the data into the demos, but did not finish and I will try to wrap them up tomorrow morning.
+work hours: 9-5
