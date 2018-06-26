@@ -82,3 +82,6 @@ work hours: 9-5
 
 06/25/18: Created a function that generates a random spherical harmonic, and then writes it to a file. Also have a method that can read files, and takes each coordinate and density data pair and adds them to a hashtable. Working on incorporating the data into the demos, but did not finish and I will try to wrap them up tomorrow morning.
 work hours: 9-5
+
+06/26/18: Finished the sound system with MS1, but could use tweaking and scalability. Looked at volumetric rendering for unity, it is possible, but need to research more. I will have more information tomorrow morning in the meeting. 
+work hours: 9-5
