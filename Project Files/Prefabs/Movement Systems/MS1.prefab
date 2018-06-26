@@ -71,6 +71,7 @@ GameObject:
   - component: {fileID: 4839036609440920}
   - component: {fileID: 81354017103784652}
   - component: {fileID: 114664073809281840}
+  - component: {fileID: 114188389550967110}
   m_Layer: 0
   m_Name: Camera (ears)
   m_TagString: Untagged
@@ -859,6 +860,37 @@ MonoBehaviour:
   middleFingerSenseAxisEvents: 1
   ringFingerSenseAxisEvents: 1
   pinkyFingerSenseAxisEvents: 1
+--- !u!114 &114188389550967110
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1352105687182502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1773642725, guid: 6995e5f4125da4bd183d041c1e88ea91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bUseCustomHRTFSelection: 0
+  bSuggestHRTFInterp: 0
+  fHeadRadius: 0.1
+  fNeckHeight: 0.05
+  fTorsoRadius: 0.23
+  fHeadRadius_Default: 0.1
+  fNeckHeight_Default: 0.05
+  fTorsoRadius_Default: 0.23
+  fPrevUnitScaleFactor: 1
+  fUnitScaleFactor: 1
+  nHRTFSelected: 0
+  nLoggingOn: 0
+  sHRTFDescriptions:
+  - Default
+  - Bassy_LG_Ear
+  - Bassy_SM_Ear
+  - Thin_LG_Ear
+  - Thin_SM_Ear
+  eUNITType: 1
+  theLicenseType: 0
 --- !u!114 &114198438663788860
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1166,8 +1198,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 482c07b68e08e9f48b5c0165bf7ea64c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  superNovaLeft: {fileID: 1374891247517502}
-  superNovaRight: {fileID: 1586813905311200}
   scaleFactor: 0.02
   lowerBound: 0.015
   upperBound: 10

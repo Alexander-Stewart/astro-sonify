@@ -1,4 +1,4 @@
-﻿//#define ALT
+﻿#define ALT
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -18,7 +18,8 @@ public class NearOrigin : MonoBehaviour {
     public float delayTime;
     public ushort hapticStrength;
     private bool inOrigin = false;
-    private bool leftOrigin = true;
+    [HideInInspector]
+    public bool leftOrigin = true;
 
     private SteamVR_TrackedObject trackedRightHand;
     private SteamVR_TrackedObject trackedLeftHand;
@@ -137,6 +138,14 @@ public class NearOrigin : MonoBehaviour {
         }
 
     }
+
+#if ALT
+    // for the audioManager to get the bool leftOrigin!
+    public bool getLeftOrigin()
+    {
+        return leftOrigin;
+    }
+#endif
 
     // private VRTK_ControllerReference LController;
     //private VRTK_ControllerReference RController;
