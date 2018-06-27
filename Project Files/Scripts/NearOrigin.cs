@@ -1,4 +1,4 @@
-﻿#define ALT
+﻿//#define ALT
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -29,8 +29,6 @@ public class NearOrigin : MonoBehaviour {
 
     private GameObject superNovaLeftObject;
     private GameObject superNovaRightObject;
-    //private VRTK_TransformFollow superNovaLeft;
-    //private VRTK_TransformFollow superNovaRight;
     public GameObject leftHand;
 
 #if ALT
@@ -44,8 +42,6 @@ public class NearOrigin : MonoBehaviour {
         // getting the left hand and supernova game objects(supernova directly gets the transform follow component)
         superNovaLeftObject = GameObject.FindGameObjectWithTag("SuperNovaLeft");
         superNovaRightObject = GameObject.FindGameObjectWithTag("SuperNovaRight");
-        //superNovaLeft = superNovaLeftObject.GetComponent<VRTK_TransformFollow>();
-        //superNovaRight = superNovaRightObject.GetComponent<VRTK_TransformFollow>();
         
         superNovaRightObject.SetActive(false);
         Debug.Log("This is the left hand: " + leftHand);
@@ -146,18 +142,6 @@ public class NearOrigin : MonoBehaviour {
         return leftOrigin;
     }
 #endif
-
-    // private VRTK_ControllerReference LController;
-    //private VRTK_ControllerReference RController;
-
-    // LController = VRTK_ControllerReference.GetControllerReference(3);
-    // RController = VRTK_ControllerReference.GetControllerReference(4);
-
-    // VRTK_ControllerHaptics.TriggerHapticPulse(RController, .5f, 1.5f, .5f);
-    // VRTK_ControllerHaptics.TriggerHapticPulse(LController, .5f, 1.5f, .5f);
-
-    // Debug.Log("This is the Left controller: " + LController);
-    //  Debug.Log("This is the Right controller: " + RController);
 #elif MS2
     public float delayTime;
     public ushort hapticStrength;
@@ -194,7 +178,6 @@ public class NearOrigin : MonoBehaviour {
 
         //setting up left model
         leftRender = leftModel.GetComponent<SteamVR_RenderModel>();
-        //leftModel.SetActive(false); fix!
 
         // getting the VRTK_TransformFollow components
         leftFollow = leftHand.GetComponent<VRTK_TransformFollow>();
@@ -260,8 +243,6 @@ public class NearOrigin : MonoBehaviour {
             // changes origin to right hand
             leftFollow.enabled = false;
             yield return new WaitForSeconds(.5f);
-           // rightModel.SetActive(false); fix!
-           // leftModel.SetActive(true); fix!
             rightFollow.enabled = true;
 
             // childing left hand and unchilding right
@@ -276,8 +257,6 @@ public class NearOrigin : MonoBehaviour {
             // switches origin to left hand
             rightFollow.enabled = false;
             yield return new WaitForSeconds(.5f);
-            //leftModel.SetActive(false); fix!
-            //rightModel.SetActive(true); fix!
             leftFollow.enabled = true;
 
             // childing right hand and unchilding left
@@ -314,7 +293,6 @@ public class NearOrigin : MonoBehaviour {
 
         } else
         {
-            //newParent = VRTK_DeviceFinder.HeadsetTransform();
             newParent = otherHand.transform;
 
             hand.transform.SetParent(newParent);

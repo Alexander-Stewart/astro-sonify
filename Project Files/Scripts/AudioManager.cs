@@ -1,4 +1,4 @@
-﻿#define ALT
+﻿//#define ALT
 using System.Collections;
 using System;
 using System.Collections.Generic;
@@ -34,30 +34,20 @@ public class AudioManager : MonoBehaviour {
     // Use this for initialization
     void Start () {
         audioSourceGameObject = GameObject.Find("RS3D_AudioSource");
-        //Debug.Log("The Audio Source Game Object is: " + audioSourceGameObject);
 
         //if MS1 Alt
 #if ALT
-        //GameObject temp = GameObject.FindGameObjectWithTag("SensorRight");
         nearOriginScript = rightHandController.GetComponent<NearOrigin>();
 
         VRTK_TransformFollow[] theScripts =  GetComponents<VRTK_TransformFollow>();
 
         audioFollowLeft = theScripts[0];
         audioFollowRight = theScripts[1];
-
-        //getting the controllers
-        //leftHandController = GameObject.FindGameObjectWithTag("SensorLeft");
-        //rightHandController = GameObject.FindGameObjectWithTag("SensorRight");
 #endif
 
         audioSource = audioSourceGameObject.GetComponent<RealSpace3D_AudioSource>();
 
         audioListener = GameObject.FindGameObjectWithTag("Ears");
-        //Debug.Log("The Audio Listener Game Object is: " + audioListener);
-
-        // getting audioMixer
-        //Debug.Log("This is the Audio Mixer: " + audioMixer);
 
         // getting densData
         densData = GetComponent<DataReader>().densData;
@@ -65,6 +55,7 @@ public class AudioManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+#if ALT
         if (nearOriginScript.getLeftOrigin())
         {
             audioFollowRight.enabled = true;
@@ -74,7 +65,7 @@ public class AudioManager : MonoBehaviour {
             audioFollowLeft.enabled = true;
             audioFollowRight.enabled = false;
         }
-
+#endif
         UpdateSound();
         //UpdateMixer();
 	}
@@ -115,8 +106,6 @@ public class AudioManager : MonoBehaviour {
         {
             density = .5f;
         }
-        //float distance = Vector3.Distance(audioListener.transform.position, audioSourceGameObject.transform.position);
-        //Debug.Log("The Distance between the Audio Source and the Audio Listener is: " + distance);
         Debug.Log("The rounded Point is: " + roundedPos);
         Debug.Log("The Density is: " + density);
 

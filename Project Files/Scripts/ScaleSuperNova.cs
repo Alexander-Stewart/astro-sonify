@@ -10,9 +10,8 @@ public class ScaleSuperNova : MonoBehaviour {
      **/
 #if MS1
     protected VRTK_ControllerEvents controllerEvents;
-    public GameObject superNovaLeft;
-    public GameObject superNovaRight;
-    //public Vector3 wantedSuperNovaPos;
+    private GameObject superNovaLeft;
+    private GameObject superNovaRight;
     public float scaleFactor;
     public float lowerBound;
     public float upperBound;
@@ -20,6 +19,8 @@ public class ScaleSuperNova : MonoBehaviour {
     void Awake()
     {
         controllerEvents = GetComponent<VRTK_ControllerEvents>();
+        superNovaLeft = GameObject.FindGameObjectWithTag("SuperNovaLeft");
+        superNovaRight = GameObject.FindGameObjectWithTag("SuperNovaRight");
     }
 
     // Update is called once per frame
@@ -51,13 +52,14 @@ public class ScaleSuperNova : MonoBehaviour {
 	}
 #elif MS2
     protected VRTK_ControllerEvents controllerEvents;
-    public GameObject superNova;
+    private GameObject superNova;
     public float scaleFactor;
     public float lowerBound;
     public float upperBound;
 
     void Awake()
     {
+        superNova = GameObject.FindGameObjectWithTag("SuperNova");
         controllerEvents = GetComponent<VRTK_ControllerEvents>();
     }
 
