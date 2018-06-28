@@ -85,3 +85,9 @@ work hours: 9-5
 
 06/26/18: Finished the sound system with MS1, but could use tweaking and scalability. Looked at volumetric rendering for unity, it is possible, but need to research more. I will have more information tomorrow morning in the meeting. 
 work hours: 9-5
+
+06/27/18: Looked up financials for each of the plug ins and put them into a text document. Also cleaned up code for readability.
+work hours: 9-5
+
+06/28/18: Created a movement system that you can fly around in. If you press one of the analog sticks, a ray will shoot out of the controller, and if it hits a desginated spot on the supernova, a screen will pop up with a description of what part of the super nova that is.
+work hours: 9-5
