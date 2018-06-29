@@ -7,7 +7,6 @@ public class MenuInteract : VRTK_InteractableObject {
 
     // move turning off on startup to the canvas script!!
 
-    private bool startUp = true;
     private bool showText = false;
     private GameObject canvas;
 
@@ -18,6 +17,7 @@ public class MenuInteract : VRTK_InteractableObject {
     {
         base.StartUsing(currentUsingObject);
         showText = true;
+        canvas.SetActive(true);
         Debug.Log("Shit is on");
     }
 
@@ -25,6 +25,7 @@ public class MenuInteract : VRTK_InteractableObject {
     {
         base.StopUsing(previousUsingObject, resetUsingObjectState);
         showText = false;
+        canvas.SetActive(false);
         Debug.Log("Shit has stopped");
     }
 
@@ -36,20 +37,7 @@ public class MenuInteract : VRTK_InteractableObject {
 	
 	// Update is called once per frame
 	protected override void Update () {
-        if (startUp)
-        {
-            Debug.Log("here");
-            canvas.SetActive(false);
-            startUp = false;
-        }
-
-        if (showText)
-        {
-            canvas.SetActive(true);
-        } else
-        {
-            canvas.SetActive(false);
-        }
+        
 	}
 
     public bool isShowText()
