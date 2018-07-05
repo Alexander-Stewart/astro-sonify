@@ -38,7 +38,7 @@ public class MenuInteract : VRTK_InteractableObject {
     void Start () {
         canvas = GameObject.FindGameObjectWithTag("Canvas");
 
-        audioSource = gameObject.transform.GetChild(1).gameObject.GetComponent<AudioSource>();
+        audioSource = gameObject.transform.GetChild(0).gameObject.GetComponent<AudioSource>();
     }
 
     public bool isShowText()
