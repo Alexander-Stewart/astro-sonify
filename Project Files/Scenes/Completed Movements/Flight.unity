@@ -113,7 +113,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!43 &218179321
+--- !u!43 &104401951
 Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -356,7 +356,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!21 &1639986525
+--- !u!21 &1245750181
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
@@ -389,6 +389,12 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &1366192677 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114088560578328716, guid: 6040b9ce37a73e24ebe6babea49622a0,
+    type: 2}
+  m_PrefabInternal: {fileID: 2112787076}
+  m_Script: {fileID: 11500000, guid: eeda6d41317f444b900e374895f14e95, type: 3}
 --- !u!1001 &2112787076
 Prefab:
   m_ObjectHideFlags: 0
@@ -396,6 +402,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114601147220457056, guid: 6040b9ce37a73e24ebe6babea49622a0,
+        type: 2}
+      propertyPath: setups.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4786800834814926, guid: 6040b9ce37a73e24ebe6babea49622a0, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -432,12 +443,12 @@ Prefab:
         type: 2}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 218179321}
+      objectReference: {fileID: 104401951}
     - target: {fileID: 23644851593601954, guid: 6040b9ce37a73e24ebe6babea49622a0,
         type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1639986525}
+      objectReference: {fileID: 1245750181}
     - target: {fileID: 114039320595668250, guid: 6040b9ce37a73e24ebe6babea49622a0,
         type: 2}
       propertyPath: drawWireframeWhenSelectedOnly
@@ -447,6 +458,50 @@ Prefab:
         type: 2}
       propertyPath: drawInGame
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114866261288027486, guid: 6040b9ce37a73e24ebe6babea49622a0,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114866261288027486, guid: 6040b9ce37a73e24ebe6babea49622a0,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114866261288027486, guid: 6040b9ce37a73e24ebe6babea49622a0,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114304581306070044, guid: 6040b9ce37a73e24ebe6babea49622a0,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114304581306070044, guid: 6040b9ce37a73e24ebe6babea49622a0,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114304581306070044, guid: 6040b9ce37a73e24ebe6babea49622a0,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114601147220457056, guid: 6040b9ce37a73e24ebe6babea49622a0,
+        type: 2}
+      propertyPath: setups.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114601147220457056, guid: 6040b9ce37a73e24ebe6babea49622a0,
+        type: 2}
+      propertyPath: setups.Array.data[0]
+      value: 
+      objectReference: {fileID: 1366192677}
+    - target: {fileID: 1933074822288604, guid: 6040b9ce37a73e24ebe6babea49622a0, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6040b9ce37a73e24ebe6babea49622a0, type: 2}
