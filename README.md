@@ -91,3 +91,6 @@ work hours: 9-5
 
 06/28/18: Created a movement system that you can fly around in. If you press one of the analog sticks, a ray will shoot out of the controller, and if it hits a desginated spot on the supernova, a screen will pop up with a description of what part of the super nova that is.
 work hours: 9-5
+
+07/09/18: Continued learning about shaders to manipulate the asset that allows for volumetric rendering. Created a new Movement System, where you move by doing a pulling motion. 
+work hours: 9-5
