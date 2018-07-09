@@ -9,6 +9,7 @@ public class MenuAndInstructions : MonoBehaviour {
     private Text screenText;
     private Text title;
     private GameObject canvas;
+    private bool startUp = true;
 
     protected VRTK_ControllerEvents contrlEvents;
 
@@ -42,7 +43,7 @@ public class MenuAndInstructions : MonoBehaviour {
             title.text = "Controls:";
             screenText.text = "Pointers: A button/X button" +
                 "\n" +
-                "Movement: point either controller in wanted direction, tilt forward analog stick/touchpad";
+                "Movement: point either controller in wanted direction, tilt analog stick forward";
             canvas.SetActive(true);
         } else if (onOffSwitch)
         {
@@ -51,4 +52,5 @@ public class MenuAndInstructions : MonoBehaviour {
         }
         
     }
+
 }
