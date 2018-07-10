@@ -45,4 +45,12 @@ public class MenuInteract : VRTK_InteractableObject {
     {
         return showText;
     }
+
+    protected override void Update()
+    {
+        if (canvas == null)
+        {
+            canvas = GameObject.FindGameObjectWithTag("Canvas");
+        }
+    }
 }

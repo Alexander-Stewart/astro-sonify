@@ -32,13 +32,24 @@ public class MenuAndInstructions : MonoBehaviour {
 
     private void MenuAndInstructions_ButtonTwoReleased(object sender, ControllerInteractionEventArgs e)
     {
+        Debug.Log("Emitted");
         onOffSwitch = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (contrlEvents.buttonTwoPressed)
+        if(canvas == null)
+        {
+            canvas = GameObject.FindGameObjectWithTag("Canvas");
+
+            GameObject textObj1 = canvas.transform.GetChild(0).gameObject;
+            title = textObj1.GetComponent<Text>();
+
+            GameObject textObj2 = canvas.transform.GetChild(1).gameObject;
+            screenText = textObj2.GetComponent<Text>();
+            GetComponent<VRTK_ControllerEvents>().ButtonTwoReleased += MenuAndInstructions_ButtonTwoReleased;
+        } else if (contrlEvents.buttonTwoPressed)
         {
             title.text = "Controls:";
             screenText.text = "Pointers: A button/X button" +

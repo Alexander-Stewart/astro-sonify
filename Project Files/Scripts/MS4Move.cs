@@ -25,7 +25,7 @@ public class MS4Move : MonoBehaviour {
 
     private void DragAndMove_TriggerPressed(object sender, ControllerInteractionEventArgs e)
     {
-        Vector3 startingPos = transform.position;
+        startingPos = transform.position;
     }
 
     // Update is called once per frame
@@ -35,14 +35,15 @@ public class MS4Move : MonoBehaviour {
         {
             Vector3 curPos = transform.position;
             Vector3 distanceMoved = curPos - startingPos;
-            if (distanceMoved.magnitude > .55)
-            {
-                distanceMoved = .55f * distanceMoved;
-            }
+            //if (distanceMoved.magnitude > .5)
+            //{
+            //    distanceMoved = .5f * distanceMoved;
+            //}
             Debug.Log("This is the magnitude: " + distanceMoved.magnitude);
-            if (distanceMoved.magnitude > .4f)
+            if (distanceMoved.magnitude > .05f)
             {
-                cameraRig.transform.position += distanceMoved * .1f;
+                cameraRig.transform.position += distanceMoved;
+                startingPos = curPos;
             }
         }
     }

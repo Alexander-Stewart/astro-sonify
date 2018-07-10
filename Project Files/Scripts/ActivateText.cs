@@ -37,12 +37,12 @@ public class ActivateText : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (startUp)
-        {
-            Debug.Log("here");
-            gameObject.SetActive(false);
-            startUp = false;
-        }
+        //if (startUp)
+        //{
+        //    Debug.Log("here");
+        //    gameObject.SetActive(false);
+        //    startUp = false;
+        //}
         foreach (MenuInteract mI in MenuInteracts)
         {
             if (mI.isShowText())
