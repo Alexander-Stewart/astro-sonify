@@ -55,6 +55,10 @@ public class AudioManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        if (audioListener == null)
+        {
+            audioListener = GameObject.FindGameObjectWithTag("Ears");
+        }
 #if ALT
         if (nearOriginScript.getLeftOrigin())
         {
@@ -110,7 +114,7 @@ public class AudioManager : MonoBehaviour {
         Debug.Log("The Density is: " + density);
 
 
-        audioSource.rs3d_AdjustPitch(3f * Mathf.Sin(density / 5f));
+        audioSource.rs3d_AdjustPitch(3f * Mathf.Sin(density / 10f));
     }
 
     private void UpdateMixer()

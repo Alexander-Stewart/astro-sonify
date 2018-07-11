@@ -99,11 +99,11 @@ public class DataGenerator : MonoBehaviour {
 
         int m = UnityEngine.Random.Range(-l, (l + 1));
         Debug.Log("This is m: " + m);
-        for(float x = -2; x <= 2; x = x + .1f)
+        for(float x = -50; x <= 50; x++)
         {
-            for(float y = -2; y <= 2; y = y + .1f)
+            for(float y = -50; y <= 50; y++)
             {
-                for(float z = -2; z <= 2; z = z + .1f)
+                for(float z = -50; z <= 50; z++)
                 {
                     float harmonicVal = HarmonicGenerator(l, m, x, y, z);
                     writer.WriteLine((float)Math.Round(x,1) + " " + 
