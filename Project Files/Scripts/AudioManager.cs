@@ -7,6 +7,7 @@ using UnityEngine.Audio;
 using RealSpace3D;
 using VRTK;
 
+[RequireComponent(typeof(DataReader))]
 public class AudioManager : MonoBehaviour {
     /**
      * this is the audio manager, where all audio transformations will take place
