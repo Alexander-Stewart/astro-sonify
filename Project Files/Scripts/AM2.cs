@@ -88,7 +88,7 @@ public class AM2 : MonoBehaviour {
         }
 
         Debug.Log("This is the scaled density: " + density);
-        //audioSource.rs3d_AdjustPitch(density * .5f, currentSoundIndex);
+        audioSource.rs3d_AdjustPitch(density * .5f, currentSoundIndex);
 #else
         Debug.Log("The rounded Point is: " + roundedPos);
         Debug.Log("The Density is: " + density);
