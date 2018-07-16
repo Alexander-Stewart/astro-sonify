@@ -9,8 +9,13 @@ using RealSpace3D;
 public class AM2 : MonoBehaviour {
 
     private RealSpace3D_AudioSource audioSource;
+    //the casA for the origin pos.
+    private GameObject CasA;
     private GameObject audioSourceGameObject;
+    //actually where the head of the person is
     private GameObject audioListener;
+    //right hand is to tell "where the user is"
+    private GameObject rightHand;
     // will find way to make private!
     public AudioMixer audioMixer;
 
@@ -22,15 +27,24 @@ public class AM2 : MonoBehaviour {
     public float musicVolume = .5f;
 
     private Dictionary<Vector3, float> densData;
+    private Dictionary<Vector3, Vector3> GradientData;
 
 
     // Use this for initialization
     void Start () {
+        // getting audio source
         audioSourceGameObject = GameObject.Find("RS3D_AudioSource");
-
+        //gettin the component
         audioSource = audioSourceGameObject.GetComponent<RealSpace3D_AudioSource>();
 
+        //gettin the audio listener
         audioListener = GameObject.FindGameObjectWithTag("Ears");
+
+        //gettin the right hand.
+        rightHand = GameObject.FindGameObjectWithTag("SensorRight");
+
+        //gettin the CasA
+        CasA = GameObject.FindGameObjectWithTag("Origin");
 
         // getting densData
         densData = GetComponent<DataReader>().densData;
@@ -38,9 +52,9 @@ public class AM2 : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (audioListener == null)
+        if (rightHand == null)
         {
-            audioListener = GameObject.FindGameObjectWithTag("Ears");
+            rightHand = GameObject.FindGameObjectWithTag("SensorRight");
         }
         UpdateSound();
         //UpdateMixer();
@@ -49,7 +63,7 @@ public class AM2 : MonoBehaviour {
     private void UpdateSound()
     {
         float density = 1;
-        Vector3 curPos = audioListener.transform.InverseTransformPoint(audioSourceGameObject.transform.position);
+        Vector3 curPos = rightHand.transform.InverseTransformPoint(CasA.transform.position);
         Vector3 roundedPos = new Vector3(Mathf.RoundToInt(curPos.x),
             Mathf.RoundToInt(curPos.y),
             Mathf.RoundToInt(curPos.z));
