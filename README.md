@@ -94,3 +94,5 @@ work hours: 9-5
 
 07/09/18: Continued learning about shaders to manipulate the asset that allows for volumetric rendering. Created a new Movement System, where you move by doing a pulling motion. 
 work hours: 9-5
+
+07/16/18: Started on implementing the gradient and curl based sonification system. created methods to find the gradient at each point in the scalar field. Next will be to get the audio source to rotate around the user and face the gradient. 
