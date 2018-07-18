@@ -9,51 +9,32 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1305881601726808}
+  m_RootGameObject: {fileID: 1004329710466614}
   m_IsPrefabParent: 1
---- !u!1 &1305881601726808
+--- !u!1 &1004329710466614
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4305339564888898}
+  - component: {fileID: 4645263564262346}
   m_Layer: 0
-  m_Name: blue
+  m_Name: darkBlue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1342754174893962
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 4436243274800198}
-  - component: {fileID: 33317608512636700}
-  - component: {fileID: 23664561529546832}
-  - component: {fileID: 64968758059389340}
-  - component: {fileID: 114118248428756340}
-  m_Layer: 0
-  m_Name: blue collider
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &1833612910350074
+--- !u!1 &1433058923370484
 GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4362263581971620}
-  - component: {fileID: 82778968686178426}
+  - component: {fileID: 4007884846523290}
+  - component: {fileID: 82578228623446398}
   m_Layer: 8
   m_Name: AS
   m_TagString: Untagged
@@ -61,53 +42,72 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4305339564888898
+--- !u!1 &1658961749894222
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4046350148154446}
+  - component: {fileID: 33633687779352106}
+  - component: {fileID: 23369621712049072}
+  - component: {fileID: 64044292605491292}
+  - component: {fileID: 114995530322808874}
+  m_Layer: 0
+  m_Name: Dark Blue Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4007884846523290
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1305881601726808}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 4436243274800198}
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4362263581971620
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1833612910350074}
+  m_GameObject: {fileID: 1433058923370484}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
-  m_Father: {fileID: 4436243274800198}
+  m_Father: {fileID: 4046350148154446}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4436243274800198
+--- !u!4 &4046350148154446
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1342754174893962}
+  m_GameObject: {fileID: 1658961749894222}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4362263581971620}
-  m_Father: {fileID: 4305339564888898}
+  - {fileID: 4007884846523290}
+  m_Father: {fileID: 4645263564262346}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23664561529546832
+--- !u!4 &4645263564262346
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1004329710466614}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4046350148154446}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &23369621712049072
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1342754174893962}
+  m_GameObject: {fileID: 1658961749894222}
   m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -117,7 +117,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: cf586045733f78442816ed2e1350412e, type: 3}
+  - {fileID: 2100000, guid: f85ae41b2e40e2741a05997e17de55be, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -137,19 +137,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33317608512636700
+--- !u!33 &33633687779352106
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1342754174893962}
-  m_Mesh: {fileID: 4300000, guid: cf586045733f78442816ed2e1350412e, type: 3}
---- !u!64 &64968758059389340
+  m_GameObject: {fileID: 1658961749894222}
+  m_Mesh: {fileID: 4300000, guid: f85ae41b2e40e2741a05997e17de55be, type: 3}
+--- !u!64 &64044292605491292
 MeshCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1342754174893962}
+  m_GameObject: {fileID: 1658961749894222}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
@@ -157,17 +157,17 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: cf586045733f78442816ed2e1350412e, type: 3}
---- !u!82 &82778968686178426
+  m_Mesh: {fileID: 4300000, guid: f85ae41b2e40e2741a05997e17de55be, type: 3}
+--- !u!82 &82578228623446398
 AudioSource:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1833612910350074}
+  m_GameObject: {fileID: 1433058923370484}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: ee3a98983c662cb40b2838b2457cf444, type: 3}
+  m_audioClip: {fileID: 8300000, guid: c51febbbaf9f4ca4c99382456a75b738, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -253,12 +253,12 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &114118248428756340
+--- !u!114 &114995530322808874
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1342754174893962}
+  m_GameObject: {fileID: 1658961749894222}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7aacbccf55a855a4fa95c821d3ab2191, type: 3}
@@ -285,7 +285,7 @@ MonoBehaviour:
   objectHighlighter: {fileID: 0}
   touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
   usingState: 0
-  description: The light blue ortions of this model represent radiation from the element
-    iron as seen in X-ray light from Chandra. Iron is forged in the very core of the
-    star but ends up on the outside of the expanding ring of debris.
-  title: 'FeK (Chandra Telescope): '
+  description: The dark blue colored elements of the model represent the outer blast
+    wave of the explosion as seen in X-rays by Chandra as well as optical and infrared
+    light, much of which is silicon.
+  title: 'Si (Chandra Telescope):'

@@ -36,13 +36,13 @@ public class DataGenerator : MonoBehaviour {
         float updateRandomDV;
 
         //creating random value for the density value at that point
-        updateRandomDV = UnityEngine.Random.Range(randomDensityValue - 3f, randomDensityValue + 4f);
-        if(updateRandomDV > .01f)
+        updateRandomDV = UnityEngine.Random.Range(randomDensityValue - 2f, randomDensityValue + 3f);
+        if(updateRandomDV > 5f)
         {
-            updateRandomDV = .01f;
-        } else if(updateRandomDV < -.01f)
+            updateRandomDV = 5f;
+        } else if(updateRandomDV < -5f)
         {
-            updateRandomDV = -.01f;
+            updateRandomDV = -5f;
         }
 
         randomDensityValue = updateRandomDV;

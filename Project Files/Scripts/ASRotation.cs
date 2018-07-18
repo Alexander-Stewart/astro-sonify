@@ -1,57 +1,82 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Audio;
 
+public class ASRotation : MonoBehaviour
+{
 
-public class ASRotation : MonoBehaviour {
-
-
-    //actually where the head of the person is
-    private GameObject audioListener;
-    //right hand is to tell "where the user is"
-    private GameObject rightHand;
     private Dictionary<Vector3, Vector3> gradientData;
+    private GameObject rightHand;
+    private GameObject audioListener;
     private GameObject CasA;
-
+    private Vector3 curFacingDir;
+    private Transform rotator;
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
+        // getting the gradient data
         GameObject playArea = GameObject.FindGameObjectWithTag("PlayArea");
-        DataReader dataReader = playArea.GetComponent<DataReader>();
-        gradientData = dataReader.gradientData;
+        gradientData = playArea.GetComponent<DataReader>().gradientData;
 
-        CasA = GameObject.FindGameObjectWithTag("Origin");
-
+        // getting the right hand
         rightHand = GameObject.FindGameObjectWithTag("SensorRight");
 
+        // getting the GameObject the Audio Listener is on
         audioListener = GameObject.FindGameObjectWithTag("Ears");
 
-	}
-	
-	// Update is called once per frame
-	void Update () {
-        //transform.LookAt(rightHand.transform);
+        // getting the CasA
+        CasA = GameObject.FindGameObjectWithTag("Origin");
 
-        //now to rotate!!!
-        Vector3 curPos = rightHand.transform.InverseTransformPoint(CasA.transform.position);
-        Vector3 roundedPos = new Vector3(Mathf.RoundToInt(curPos.x),
-            Mathf.RoundToInt(curPos.y),
-            Mathf.RoundToInt(curPos.z));
+        // getting the rotator transform 
+        rotator = transform.parent.transform;
 
-        Debug.Log("curPos: " + roundedPos);
+        curFacingDir = transform.forward;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (rightHand == null)
+        {
+            // getting the right hand
+            rightHand = GameObject.FindGameObjectWithTag("SensorRight");
+        }
+        else
+        {
+            UpdateRotation();
+        }
+    }
+
+    private void UpdateRotation()
+    {
+        // getting the current position
+
+        Vector3 curPos;
+        curPos = rightHand.transform.InverseTransformPoint(CasA.transform.position);
+
+         Vector3 roundedPos = new Vector3(Mathf.RoundToInt(curPos.x),
+             Mathf.RoundToInt(curPos.y),
+             Mathf.RoundToInt(curPos.z));
 
         if (gradientData.ContainsKey(roundedPos))
         {
-            Debug.Log("Hwewwe");
-            Vector3 rotationalAxis = Vector3.Cross(audioListener.transform.position - gradientData[roundedPos],
-                                                        audioListener.transform.position - transform.position);
+            Vector3 dirToLook;
+            Quaternion rotation;
 
-            float angle = Vector3.Angle(audioListener.transform.position - transform.position, 
-                                            audioListener.transform.position - gradientData[roundedPos]);
+            Debug.Log("In If statement: ASRotation");
+            Vector3 gradientVector = gradientData[roundedPos];
+            Debug.Log("Gradient: " + gradientVector);
+            if (gradientVector != Vector3.zero)
+            {
+                // getting the direction to look and the needed rotation
+                dirToLook = rotator.transform.InverseTransformDirection(gradientVector).normalized;
+                rotation = Quaternion.LookRotation(dirToLook);
 
-            transform.RotateAround(audioListener.transform.position, rotationalAxis, angle);
+                // rotating
+                rotator.transform.rotation = Quaternion.Slerp(rotator.transform.rotation, rotation, Time.deltaTime);
+            }
+
         }
-         
-	}
+    }
 }

@@ -73,6 +73,7 @@ GameObject:
   - component: {fileID: 4872474990108462}
   - component: {fileID: 114331486040315550}
   - component: {fileID: 114948179333739472}
+  - component: {fileID: 114315101764863348}
   m_Layer: 0
   m_Name: LeftController
   m_TagString: LeftController
@@ -157,9 +158,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4460247807509182}
   - component: {fileID: 114199461691318122}
-  - component: {fileID: 114654730903286088}
   - component: {fileID: 114196658642603652}
   - component: {fileID: 114936030291909894}
+  - component: {fileID: 114654730903286088}
   m_Layer: 0
   m_Name: RightController
   m_TagString: RightController
@@ -265,7 +266,7 @@ GameObject:
   - component: {fileID: 4204627952763430}
   m_Layer: 0
   m_Name: CasA-filt
-  m_TagString: Untagged
+  m_TagString: SuperNova
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1097,6 +1098,18 @@ MonoBehaviour:
   _head: {fileID: 4768026512586190}
   _ears: {fileID: 4038533720223462}
   wireframe: 0
+--- !u!114 &114315101764863348
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1166404744417448}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe9d3fe3c1efd4745822c89301ad4cf7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scaleFactor: 15
 --- !u!114 &114331486040315550
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1237,7 +1250,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 482c07b68e08e9f48b5c0165bf7ea64c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  superNova: {fileID: 1699990485906174}
   scaleFactor: 0.02
   lowerBound: 0.015
   upperBound: 10

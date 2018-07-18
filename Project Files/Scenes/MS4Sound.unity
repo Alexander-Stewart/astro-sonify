@@ -113,7 +113,218 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!43 &88638769
+--- !u!1001 &263942519
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4749586606212096, guid: 6dd2ad1c498eb474ab73611bbbfcb5f6, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -0.23840976
+      objectReference: {fileID: 0}
+    - target: {fileID: 4749586606212096, guid: 6dd2ad1c498eb474ab73611bbbfcb5f6, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -1.3361251
+      objectReference: {fileID: 0}
+    - target: {fileID: 4749586606212096, guid: 6dd2ad1c498eb474ab73611bbbfcb5f6, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.2750702
+      objectReference: {fileID: 0}
+    - target: {fileID: 4749586606212096, guid: 6dd2ad1c498eb474ab73611bbbfcb5f6, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4749586606212096, guid: 6dd2ad1c498eb474ab73611bbbfcb5f6, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4749586606212096, guid: 6dd2ad1c498eb474ab73611bbbfcb5f6, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4749586606212096, guid: 6dd2ad1c498eb474ab73611bbbfcb5f6, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4749586606212096, guid: 6dd2ad1c498eb474ab73611bbbfcb5f6, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114254613617389070, guid: 6dd2ad1c498eb474ab73611bbbfcb5f6,
+        type: 2}
+      propertyPath: gameObjectToFollow
+      value: 
+      objectReference: {fileID: 1381723558}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 6dd2ad1c498eb474ab73611bbbfcb5f6, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &421419710
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 6bb46f0f35b82334e98df1e43e8bcf94, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 6bb46f0f35b82334e98df1e43e8bcf94, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 6bb46f0f35b82334e98df1e43e8bcf94, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 153
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 6bb46f0f35b82334e98df1e43e8bcf94, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 6bb46f0f35b82334e98df1e43e8bcf94, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 6bb46f0f35b82334e98df1e43e8bcf94, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 6bb46f0f35b82334e98df1e43e8bcf94, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 6bb46f0f35b82334e98df1e43e8bcf94, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 6bb46f0f35b82334e98df1e43e8bcf94, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 6bb46f0f35b82334e98df1e43e8bcf94, type: 3}
+      propertyPath: m_TagString
+      value: Origin
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 6bb46f0f35b82334e98df1e43e8bcf94, type: 3}
+  m_IsPrefabParent: 0
+--- !u!21 &529101196
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Sprites/Default
+  m_Shader: {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AlphaTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - PixelSnap: 0
+    - _EnableExternalAlpha: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Flip: {r: 1, g: 1, b: 1, a: 1}
+    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1001 &804809042
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4697806398158204, guid: e2b4d750648021b488663cf3043eebef, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -0.23840976
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697806398158204, guid: e2b4d750648021b488663cf3043eebef, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -1.3361251
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697806398158204, guid: e2b4d750648021b488663cf3043eebef, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.2750702
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697806398158204, guid: e2b4d750648021b488663cf3043eebef, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697806398158204, guid: e2b4d750648021b488663cf3043eebef, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697806398158204, guid: e2b4d750648021b488663cf3043eebef, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697806398158204, guid: e2b4d750648021b488663cf3043eebef, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697806398158204, guid: e2b4d750648021b488663cf3043eebef, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 33497890849407022, guid: e2b4d750648021b488663cf3043eebef,
+        type: 2}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 944565605}
+    - target: {fileID: 23122226361305416, guid: e2b4d750648021b488663cf3043eebef,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 529101196}
+    - target: {fileID: 114159098629077958, guid: e2b4d750648021b488663cf3043eebef,
+        type: 2}
+      propertyPath: scriptAliasLeftController
+      value: 
+      objectReference: {fileID: 1485887793}
+    - target: {fileID: 114159098629077958, guid: e2b4d750648021b488663cf3043eebef,
+        type: 2}
+      propertyPath: scriptAliasRightController
+      value: 
+      objectReference: {fileID: 1541687581}
+    - target: {fileID: 1662366756186520, guid: e2b4d750648021b488663cf3043eebef, type: 2}
+      propertyPath: m_TagString
+      value: CameraRigBase
+      objectReference: {fileID: 0}
+    - target: {fileID: 81681910746605656, guid: e2b4d750648021b488663cf3043eebef,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1971751256142256, guid: e2b4d750648021b488663cf3043eebef, type: 2}
+      propertyPath: m_TagString
+      value: SensorRight
+      objectReference: {fileID: 0}
+    - target: {fileID: 1941443881564048, guid: e2b4d750648021b488663cf3043eebef, type: 2}
+      propertyPath: m_TagString
+      value: Ears
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114214063245083806, guid: e2b4d750648021b488663cf3043eebef, type: 2}
+    - {fileID: 135220607653793990, guid: e2b4d750648021b488663cf3043eebef, type: 2}
+  m_ParentPrefab: {fileID: 100100000, guid: e2b4d750648021b488663cf3043eebef, type: 2}
+  m_IsPrefabParent: 0
+--- !u!43 &944565605
 Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -259,18 +470,18 @@ Mesh:
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshOptimized: 0
---- !u!1 &309229095 stripped
+--- !u!1 &1069451287 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1905874920023200, guid: 3bf00fac21132e74685d26207abee6a5,
     type: 2}
   m_PrefabInternal: {fileID: 1674940368}
---- !u!114 &309229097
+--- !u!114 &1069451289
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 309229095}
-  m_Enabled: 1
+  m_GameObject: {fileID: 1069451287}
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2b6626304f991ac43a2858536d300b2e, type: 3}
   m_Name: 
@@ -278,196 +489,76 @@ MonoBehaviour:
   audioMixer: {fileID: 0}
   fadeTime: 1
   musicVolume: 0.5
---- !u!114 &309229098
+--- !u!114 &1069451290
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 309229095}
+  m_GameObject: {fileID: 1069451287}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6e426c1575dc3b944996768c86c6a54e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &309229099
+--- !u!114 &1069451291
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 309229095}
+  m_GameObject: {fileID: 1069451287}
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b207f4176ab62084785b9b9325de7c15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!21 &377385894
-Material:
-  serializedVersion: 6
+--- !u!1 &1278494756 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1971751256142256, guid: e2b4d750648021b488663cf3043eebef,
+    type: 2}
+  m_PrefabInternal: {fileID: 804809042}
+--- !u!114 &1278494759
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Sprites/Default
-  m_Shader: {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _AlphaTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - PixelSnap: 0
-    - _EnableExternalAlpha: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Flip: {r: 1, g: 1, b: 1, a: 1}
-    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
---- !u!1001 &421419710
-Prefab:
+  m_GameObject: {fileID: 1278494756}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1773642725, guid: 6995e5f4125da4bd183d041c1e88ea91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bUseCustomHRTFSelection: 0
+  bSuggestHRTFInterp: 0
+  fHeadRadius: 0.1
+  fNeckHeight: 0.05
+  fTorsoRadius: 0.23
+  fHeadRadius_Default: 0.1
+  fNeckHeight_Default: 0.05
+  fTorsoRadius_Default: 0.23
+  fPrevUnitScaleFactor: 1
+  fUnitScaleFactor: 1
+  nHRTFSelected: 0
+  nLoggingOn: 0
+  sHRTFDescriptions:
+  - Default
+  - Bassy_LG_Ear
+  - Bassy_SM_Ear
+  - Thin_LG_Ear
+  - Thin_SM_Ear
+  eUNITType: 1
+  theLicenseType: 0
+--- !u!81 &1278494760
+AudioListener:
   m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 400000, guid: 6bb46f0f35b82334e98df1e43e8bcf94, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 6bb46f0f35b82334e98df1e43e8bcf94, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 6bb46f0f35b82334e98df1e43e8bcf94, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 153
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 6bb46f0f35b82334e98df1e43e8bcf94, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 6bb46f0f35b82334e98df1e43e8bcf94, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 6bb46f0f35b82334e98df1e43e8bcf94, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 6bb46f0f35b82334e98df1e43e8bcf94, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 6bb46f0f35b82334e98df1e43e8bcf94, type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 6bb46f0f35b82334e98df1e43e8bcf94, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: 6bb46f0f35b82334e98df1e43e8bcf94, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 6bb46f0f35b82334e98df1e43e8bcf94, type: 3}
-      propertyPath: m_TagString
-      value: Origin
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 6bb46f0f35b82334e98df1e43e8bcf94, type: 3}
-  m_IsPrefabParent: 0
---- !u!1001 &804809042
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4697806398158204, guid: e2b4d750648021b488663cf3043eebef, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -0.23840976
-      objectReference: {fileID: 0}
-    - target: {fileID: 4697806398158204, guid: e2b4d750648021b488663cf3043eebef, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -1.3361251
-      objectReference: {fileID: 0}
-    - target: {fileID: 4697806398158204, guid: e2b4d750648021b488663cf3043eebef, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0.2750702
-      objectReference: {fileID: 0}
-    - target: {fileID: 4697806398158204, guid: e2b4d750648021b488663cf3043eebef, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4697806398158204, guid: e2b4d750648021b488663cf3043eebef, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4697806398158204, guid: e2b4d750648021b488663cf3043eebef, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4697806398158204, guid: e2b4d750648021b488663cf3043eebef, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4697806398158204, guid: e2b4d750648021b488663cf3043eebef, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 33497890849407022, guid: e2b4d750648021b488663cf3043eebef,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 88638769}
-    - target: {fileID: 23122226361305416, guid: e2b4d750648021b488663cf3043eebef,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 377385894}
-    - target: {fileID: 114159098629077958, guid: e2b4d750648021b488663cf3043eebef,
-        type: 2}
-      propertyPath: scriptAliasLeftController
-      value: 
-      objectReference: {fileID: 1485887793}
-    - target: {fileID: 114159098629077958, guid: e2b4d750648021b488663cf3043eebef,
-        type: 2}
-      propertyPath: scriptAliasRightController
-      value: 
-      objectReference: {fileID: 1541687581}
-    - target: {fileID: 1662366756186520, guid: e2b4d750648021b488663cf3043eebef, type: 2}
-      propertyPath: m_TagString
-      value: CameraRigBase
-      objectReference: {fileID: 0}
-    - target: {fileID: 81681910746605656, guid: e2b4d750648021b488663cf3043eebef,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1971751256142256, guid: e2b4d750648021b488663cf3043eebef, type: 2}
-      propertyPath: m_TagString
-      value: SensorRight
-      objectReference: {fileID: 0}
-    - target: {fileID: 1941443881564048, guid: e2b4d750648021b488663cf3043eebef, type: 2}
-      propertyPath: m_TagString
-      value: Ears
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 114214063245083806, guid: e2b4d750648021b488663cf3043eebef, type: 2}
-    - {fileID: 135220607653793990, guid: e2b4d750648021b488663cf3043eebef, type: 2}
-  m_ParentPrefab: {fileID: 100100000, guid: e2b4d750648021b488663cf3043eebef, type: 2}
-  m_IsPrefabParent: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1278494756}
+  m_Enabled: 0
+--- !u!1 &1381723558 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1941443881564048, guid: e2b4d750648021b488663cf3043eebef,
+    type: 2}
+  m_PrefabInternal: {fileID: 804809042}
 --- !u!1 &1485887793 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1671483365093368, guid: 3bf00fac21132e74685d26207abee6a5,
@@ -484,1376 +575,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27365fd2c896fc5498cb079d8ea138e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1001 &1523022656
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 2061391484}
-    m_Modifications:
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: rsAudioClips.Array.size
-      value: 43
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: sAudioClipPath.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.size
-      value: 43
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: sAudioClipLength.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 409454, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 409454, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 409454, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 409454, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 409454, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 409454, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 409454, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 409454, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 171780, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: bUnityVersion_NAP
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: nShownClips
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: sAudioClipPath.Array.data[0]
-      value: Assets/Sounds/364663__jmiddlesworth__bird-call-in-spring.mp3
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: sAudioClipLength.Array.data[0]
-      value: 00:02:11
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[0].fOriginalVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: rsAudioClips.Array.data[0]
-      value: 
-      objectReference: {fileID: 8300000, guid: 8ede1d43f836a6a4b983e09c12e89731, type: 3}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[0].fVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[0].bWasPlaying
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[0].bOptimizeResumeOn
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[0].bOptimizePauseOn
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: bShowMaxRange
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: fSoundRange_MaxDist
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[0].bPlay3DSound
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[0].fPitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[1].fVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[1].fOriginalVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[1].fPitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[1].fDopplerLevel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[1].bPlay3DSound
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[1].bShowSoundOptions
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[1].eFXReverbState
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[2].fVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[2].fOriginalVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[2].fPitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[2].fDopplerLevel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[2].bPlay3DSound
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[2].bShowSoundOptions
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[2].eFXReverbState
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[3].fVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[3].fOriginalVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[3].fPitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[3].fDopplerLevel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[3].bPlay3DSound
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[3].bShowSoundOptions
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[3].eFXReverbState
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: nNodeCount
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[4].fVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[4].fOriginalVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[4].fPitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[4].fDopplerLevel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[4].bPlay3DSound
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[4].bShowSoundOptions
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[4].eFXReverbState
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[5].fVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[5].fOriginalVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[5].fPitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[5].fDopplerLevel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[5].bPlay3DSound
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[5].bShowSoundOptions
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[5].eFXReverbState
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[6].fVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[6].fOriginalVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[6].fPitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[6].fDopplerLevel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[6].bPlay3DSound
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[6].bShowSoundOptions
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[6].eFXReverbState
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[7].fVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[7].fOriginalVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[7].fPitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[7].fDopplerLevel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[7].bPlay3DSound
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[7].bShowSoundOptions
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[7].eFXReverbState
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[8].fVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[8].fOriginalVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[8].fPitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[8].fDopplerLevel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[8].bPlay3DSound
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[8].bShowSoundOptions
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[8].eFXReverbState
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[9].fVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[9].fOriginalVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[9].fPitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[9].fDopplerLevel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[9].bPlay3DSound
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[9].bShowSoundOptions
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[9].eFXReverbState
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[10].fVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[10].fOriginalVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[10].fPitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[10].fDopplerLevel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[10].bPlay3DSound
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[10].bShowSoundOptions
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[10].eFXReverbState
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[11].fVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[11].fOriginalVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[11].fPitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[11].fDopplerLevel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[11].bPlay3DSound
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[11].bShowSoundOptions
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[11].eFXReverbState
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[12].fVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[12].fOriginalVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[12].fPitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[12].fDopplerLevel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[12].bPlay3DSound
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[12].bShowSoundOptions
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[12].eFXReverbState
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[13].fVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[13].fOriginalVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[13].fPitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[13].fDopplerLevel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[13].bPlay3DSound
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[13].bShowSoundOptions
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[13].eFXReverbState
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[14].fVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[14].fOriginalVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[14].fPitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[14].fDopplerLevel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[14].bPlay3DSound
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[14].bShowSoundOptions
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[14].eFXReverbState
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[15].fVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[15].fOriginalVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[15].fPitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[15].fDopplerLevel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[15].bPlay3DSound
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[15].bShowSoundOptions
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[15].eFXReverbState
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[16].fVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[16].fOriginalVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[16].fPitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[16].fDopplerLevel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[16].bPlay3DSound
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[16].bShowSoundOptions
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[16].eFXReverbState
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[17].fVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[17].fOriginalVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[17].fPitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[17].fDopplerLevel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[17].bPlay3DSound
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[17].bShowSoundOptions
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[17].eFXReverbState
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[18].fVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[18].fOriginalVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[18].fPitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[18].fDopplerLevel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[18].bPlay3DSound
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[18].bShowSoundOptions
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[18].eFXReverbState
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[19].fVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[19].fOriginalVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[19].fPitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[19].fDopplerLevel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[19].bPlay3DSound
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[19].bShowSoundOptions
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[19].eFXReverbState
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[20].fVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[20].fOriginalVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[20].fPitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[20].fDopplerLevel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[20].bPlay3DSound
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[20].bShowSoundOptions
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[20].eFXReverbState
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[21].fVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[21].fOriginalVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[21].fPitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[21].fDopplerLevel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[21].bPlay3DSound
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[21].bShowSoundOptions
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[21].eFXReverbState
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[22].fVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[22].fOriginalVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[22].fPitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[22].fDopplerLevel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[22].bPlay3DSound
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[22].bShowSoundOptions
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[22].eFXReverbState
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[23].fVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[23].fOriginalVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[23].fPitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[23].fDopplerLevel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[23].bPlay3DSound
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[23].bShowSoundOptions
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[23].eFXReverbState
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[24].fVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[24].fOriginalVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[24].fPitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[24].fDopplerLevel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[24].bPlay3DSound
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[24].bShowSoundOptions
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[24].eFXReverbState
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[25].fVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[25].fOriginalVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[25].fPitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[25].fDopplerLevel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[25].bPlay3DSound
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[25].bShowSoundOptions
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[25].eFXReverbState
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[26].fVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[26].fOriginalVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[26].fPitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[26].fDopplerLevel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[26].bPlay3DSound
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[26].bShowSoundOptions
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[26].eFXReverbState
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[27].fVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[27].fOriginalVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[27].fPitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[27].fDopplerLevel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[27].bPlay3DSound
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[27].bShowSoundOptions
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[27].eFXReverbState
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[28].fVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[28].fOriginalVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[28].fPitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[28].fDopplerLevel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[28].bPlay3DSound
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[28].bShowSoundOptions
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[28].eFXReverbState
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[29].fVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[29].fOriginalVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[29].fPitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[29].fDopplerLevel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[29].bPlay3DSound
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[29].bShowSoundOptions
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[29].eFXReverbState
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[30].fVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[30].fOriginalVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[30].fPitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[30].fDopplerLevel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[30].bPlay3DSound
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[30].bShowSoundOptions
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[30].eFXReverbState
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[31].fVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[31].fOriginalVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[31].fPitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[31].fDopplerLevel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[31].bPlay3DSound
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[31].bShowSoundOptions
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[31].eFXReverbState
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[32].fVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[32].fOriginalVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[32].fPitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[32].fDopplerLevel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[32].bPlay3DSound
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[32].bShowSoundOptions
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[32].eFXReverbState
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[33].fVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[33].fOriginalVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[33].fPitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[33].fDopplerLevel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[33].bPlay3DSound
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[33].bShowSoundOptions
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[33].eFXReverbState
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[34].fVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[34].fOriginalVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[34].fPitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[34].fDopplerLevel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[34].bPlay3DSound
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[34].bShowSoundOptions
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[34].eFXReverbState
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[35].fVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[35].fOriginalVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[35].fPitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[35].fDopplerLevel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[35].bPlay3DSound
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[35].bShowSoundOptions
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[35].eFXReverbState
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[36].fVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[36].fOriginalVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[36].fPitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[36].fDopplerLevel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[36].bPlay3DSound
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[36].bShowSoundOptions
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[36].eFXReverbState
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[37].fVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[37].fOriginalVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[37].fPitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[37].fDopplerLevel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[37].bPlay3DSound
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[37].bShowSoundOptions
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[37].eFXReverbState
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[38].fVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[38].fOriginalVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[38].fPitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[38].fDopplerLevel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[38].bPlay3DSound
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[38].bShowSoundOptions
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[38].eFXReverbState
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[39].fVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[39].fOriginalVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[39].fPitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[39].fDopplerLevel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[39].bPlay3DSound
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[39].bShowSoundOptions
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[39].eFXReverbState
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[40].fVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[40].fOriginalVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[40].fPitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[40].fDopplerLevel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[40].bPlay3DSound
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[40].bShowSoundOptions
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[40].eFXReverbState
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[41].fVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[41].fOriginalVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[41].fPitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[41].fDopplerLevel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[41].bPlay3DSound
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[41].bShowSoundOptions
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[41].eFXReverbState
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[42].fVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[42].fOriginalVolume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[42].fPitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[42].fDopplerLevel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[42].bPlay3DSound
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[42].bShowSoundOptions
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[42].eFXReverbState
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: sAudioClipPath.Array.data[1]
-      value: Assets/Sounds/364663__jmiddlesworth__bird-call-in-spring.mp3
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: sAudioClipLength.Array.data[1]
-      value: 00:02:11
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: rsAudioClips.Array.data[1]
-      value: 
-      objectReference: {fileID: 8300000, guid: 8ede1d43f836a6a4b983e09c12e89731, type: 3}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: sAudioClipPath.Array.data[2]
-      value: Assets/Sounds/364663__jmiddlesworth__bird-call-in-spring.mp3
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: sAudioClipLength.Array.data[2]
-      value: 00:02:11
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: rsAudioClips.Array.data[2]
-      value: 
-      objectReference: {fileID: 8300000, guid: 8ede1d43f836a6a4b983e09c12e89731, type: 3}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[1].bLoopSound
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[0].bPlayOnStart
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[2].bLoopSound
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[0].bShowSoundOptions
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: bShowAdvanceOptions
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[1].bWasPlaying
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[1].bOptimizeResumeOn
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[2].bWasPlaying
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[2].bOptimizeResumeOn
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: theSoundOptions.Array.data[2].bOptimizePauseOn
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11453094, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 171780, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: efec6a6cbc0e144f3aa0483289183790, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &1541687581 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1063152005739862, guid: 3bf00fac21132e74685d26207abee6a5,
@@ -1897,6 +618,10 @@ Prefab:
     - target: {fileID: 4726372257587054, guid: 3bf00fac21132e74685d26207abee6a5, type: 2}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1905874920023200, guid: 3bf00fac21132e74685d26207abee6a5, type: 2}
+      propertyPath: m_TagString
+      value: PlayArea
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114088848293343920, guid: 3bf00fac21132e74685d26207abee6a5, type: 2}
@@ -1970,43 +695,3 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!4 &2061391484 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 400000, guid: 6bb46f0f35b82334e98df1e43e8bcf94, type: 3}
-  m_PrefabInternal: {fileID: 421419710}
---- !u!1 &2075977098 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1941443881564048, guid: e2b4d750648021b488663cf3043eebef,
-    type: 2}
-  m_PrefabInternal: {fileID: 804809042}
---- !u!114 &2075977102
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2075977098}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1773642725, guid: 6995e5f4125da4bd183d041c1e88ea91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bUseCustomHRTFSelection: 0
-  bSuggestHRTFInterp: 0
-  fHeadRadius: 0.1
-  fNeckHeight: 0.05
-  fTorsoRadius: 0.23
-  fHeadRadius_Default: 0.1
-  fNeckHeight_Default: 0.05
-  fTorsoRadius_Default: 0.23
-  fPrevUnitScaleFactor: 1
-  fUnitScaleFactor: 1
-  nHRTFSelected: 0
-  nLoggingOn: 0
-  sHRTFDescriptions:
-  - Default
-  - Bassy_LG_Ear
-  - Bassy_SM_Ear
-  - Thin_LG_Ear
-  - Thin_SM_Ear
-  eUNITType: 1
-  theLicenseType: 0

@@ -154,7 +154,7 @@ public class AM2 : MonoBehaviour {
     private IEnumerator CrossFade(float fadeTime)
     {
 
-        //Debug.Log("Inside Cor");
+        Debug.Log("Inside Cor");
         float stepInterval = fadeTime / 20.0f;
         float volInterval = musicVolume / 20.0f;
 
