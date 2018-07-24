@@ -98,3 +98,5 @@ work hours: 9-5
 07/16/18: Started on implementing the gradient and curl based sonification system. created methods to find the gradient at each point in the scalar field. Next will be to get the audio source to rotate around the user and face the gradient. 
 
 07/23/18: Finished implementing the Audio Sources pointing to direction of greatest density, and updated cleaned up the code to run smoother. Started to add in the sound to old movement systems, and will start on a way to quickly change between movement systems tomorrow.
+
+07/24/18: Continued to implement the Audio system into old systems. The first two systems I made are very messy and hard to integrate new things into, I will redo them tomorrow, as I feel I know how to accomplish what they do in a simpler fashion. I also looked more into blending the different meshes of the supernova together, it is difficult in Unity, but may be possible to create an animation of the transformation in Blender.
