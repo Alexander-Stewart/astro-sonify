@@ -100,3 +100,5 @@ work hours: 9-5
 07/23/18: Finished implementing the Audio Sources pointing to direction of greatest density, and updated cleaned up the code to run smoother. Started to add in the sound to old movement systems, and will start on a way to quickly change between movement systems tomorrow.
 
 07/24/18: Continued to implement the Audio system into old systems. The first two systems I made are very messy and hard to integrate new things into, I will redo them tomorrow, as I feel I know how to accomplish what they do in a simpler fashion. I also looked more into blending the different meshes of the supernova together, it is difficult in Unity, but may be possible to create an animation of the transformation in Blender.
+
+07/25/18: Having a hard time recreating the first two Movement Systems, will come back to them once I have a way to quick switch between movement systems and make the sounds more distinguishable. 
