@@ -1,4 +1,4 @@
-﻿//#define ALT
+﻿#define ALT
 using System.Collections;
 using System;
 using System.Collections.Generic;
