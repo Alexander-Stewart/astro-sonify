@@ -53,7 +53,7 @@ public class ChuckSoundGenerator : MonoBehaviour {
                 // running the envelope with the frequency
                 freq => foo.freq;
                 e.keyOn();
-                500::ms => now;
+                1500::ms => now;
                 e.keyOff();
                 500::ms => now;
             }
@@ -87,11 +87,11 @@ public class ChuckSoundGenerator : MonoBehaviour {
 
                 // running the envelope with the frequency
                 freq => foo.freq;
-                150::ms => now;
-                e.keyOn();
                 500::ms => now;
+                e.keyOn();
+                1000::ms => now;
                 e.keyOff();
-                350::ms => now;
+                500::ms => now;
             }
    
             global float impactFreq;
@@ -123,11 +123,11 @@ public class ChuckSoundGenerator : MonoBehaviour {
 
                 // running the envelope with the frequency
                 freq => foo.freq;
-                300::ms => now;
+                1000::ms => now;
                 e.keyOn();
                 500::ms => now;
                 e.keyOff();
-                200::ms => now;
+                500::ms => now;
             }
    
             global float impactFreq;
@@ -186,6 +186,9 @@ public class ChuckSoundGenerator : MonoBehaviour {
         return (((maxScale - minScale) * (density - minRange)) / (maxRange - minRange)) + minScale;
     }
 
+
+
+
     private IEnumerator StartBang()
     {
         while (true)
@@ -193,7 +196,7 @@ public class ChuckSoundGenerator : MonoBehaviour {
             freq = GetFreq();
             GetComponent<ChuckSubInstance>().SetFloat("impactFreq", freq);
             GetComponent<ChuckSubInstance>().BroadcastEvent("impactHappened");
-            yield return new WaitForSeconds(2f);
+            yield return new WaitForSeconds(3f);
             Debug.Log("Making Bang!!!");
             yield return null;
         }

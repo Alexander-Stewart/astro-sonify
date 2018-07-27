@@ -30,7 +30,7 @@ public class ControllerFlight : MonoBehaviour {
 
             Vector3 dir = transform.forward;
 
-            Debug.Log("This is the mf direction: " + dir);
+            //Debug.Log("This is the mf direction: " + dir);
             if (dir.y >= 0)
             {
                 dir.y -= .5f;

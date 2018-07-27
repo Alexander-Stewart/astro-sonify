@@ -12,12 +12,13 @@ public class DrumActivate : MonoBehaviour {
 
         // getting the audio source
         drumSource = GetComponent<AudioSource>();
-        
+        Debug.Log("NEED THE HEAD TO HAVE A SPHERE COLLIDER AND MAKE IT A TRIGGER!");
 	}
 	
     // for starting the clip
-    void OnCollisionEnter(Collision col)
+    void OnTriggerStay(Collider other)
     {
+        Debug.Log("Entered");
         if (!drumSource.isPlaying)
         {
             drumSource.Play();
@@ -25,11 +26,12 @@ public class DrumActivate : MonoBehaviour {
     }
 
     // for ending the clip
-    void OnCollisionExit(Collision col)
+    void OnTriggerExit(Collider other)
     {
-        if(drumSource.isPlaying)
+        Debug.Log("Exited");
+        if (drumSource.isPlaying)
         {
-            drumSource.Stop();
+            drumSource.Pause();
         }
     }
 }
