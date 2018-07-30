@@ -106,3 +106,5 @@ work hours: 9-5
 07/26/18: Created a way to switch between movement systems without having to exit build/play mode. Started on different drums playing when you enter different parts of the super nova.
 
 07/27/18: Finished adding triggers to where as you move along surface of super nova, different drums play as you are near certain areas/features.
+
+07/30/18: Finished redoing one of the original Movement system, but may create a variation that makes more sense in the context of how the sound is implemented right now.
