@@ -108,3 +108,5 @@ work hours: 9-5
 07/27/18: Finished adding triggers to where as you move along surface of super nova, different drums play as you are near certain areas/features.
 
 07/30/18: Finished redoing one of the original Movement system, but may create a variation that makes more sense in the context of how the sound is implemented right now.
+
+07/31/18: Updated the finished original MS to make more sense with the audio system in place, and started on recreating another movement system to make more sense. Also started to look into more ways to make sounds distinguishable through Chuck.
