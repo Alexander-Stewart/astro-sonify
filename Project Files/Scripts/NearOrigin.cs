@@ -229,7 +229,7 @@ public class NearOrigin : MonoBehaviour
         // MS2
         if (MS == MovementSystem.MS2)
         {
-            if (leftOrigin)
+            if (leftOrigin) // test more tmr, negate to test
             {
                 leftRender.index = trackedLeftHand.index;
                 // changes origin to right hand

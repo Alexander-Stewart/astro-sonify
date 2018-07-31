@@ -30,7 +30,7 @@ public class ASRotation : MonoBehaviour
         audioListener = GameObject.FindGameObjectWithTag("Ears");
 
         // getting the CasA
-        CasA = GameObject.FindGameObjectWithTag("Origin");
+        CasA = GameObject.FindGameObjectWithTag("SuperNova");
 
         // getting the rotator transform 
         rotator = transform.parent.transform;

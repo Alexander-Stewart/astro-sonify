@@ -31,7 +31,7 @@ public class ChuckSoundGenerator : MonoBehaviour {
         headFollow = GameObject.FindGameObjectWithTag("HeadFollow");
 
         // getting the CasA
-        CasA = GameObject.FindGameObjectWithTag("Origin");
+        CasA = GameObject.FindGameObjectWithTag("SuperNova");
 
         if (timbreSelect == TimbreSelect.brass)
         {
