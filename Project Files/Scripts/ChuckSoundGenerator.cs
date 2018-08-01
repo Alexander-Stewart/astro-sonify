@@ -19,10 +19,22 @@ public class ChuckSoundGenerator : MonoBehaviour {
 
     private GameObject CasA;
 
+    // for checking MS version
+    private MovementSystem MSL;
+
+    // for MS1
+    private GameObject CasALeft;
+    private GameObject CasARight;
+    // for MS1
+
     private float freqRangeMin, freqRangeMax;
 
     // Use this for initialization
     void Start () {
+
+        // getting the MS logger to see which version the MS is
+        MSL = GameObject.Find("MSLogger").GetComponent<MSLogger>().MS;
+
 
         GameObject playArea = GameObject.FindGameObjectWithTag("PlayArea");
         densData = playArea.GetComponent<DataReader>().densData;
@@ -31,7 +43,16 @@ public class ChuckSoundGenerator : MonoBehaviour {
         headFollow = GameObject.FindGameObjectWithTag("HeadFollow");
 
         // getting the CasA
-        CasA = GameObject.FindGameObjectWithTag("SuperNova");
+        if (MSL == MovementSystem.MS1)
+        {
+            CasALeft = GameObject.FindGameObjectWithTag("SuperNovaLeft");
+            CasARight = GameObject.FindGameObjectWithTag("SuperNovaRight");
+        }
+        else
+        {
+            CasA = GameObject.FindGameObjectWithTag("SuperNova");
+        }
+
 
         if (timbreSelect == TimbreSelect.brass)
         {
@@ -77,20 +98,34 @@ public class ChuckSoundGenerator : MonoBehaviour {
             fun void playImpact( float freq )
             {
                 // connecting to dac with osc type
-                TriOsc foo => Envelope e => dac;
+                Saxofony foo => JCRev r => Envelope e => dac;
 
                 // lowering the gain
-                .3 => foo.gain;
-                
+                .5 => r.gain;
+                .2 => r.mix;
+
+
+                // setting params
+                .8 => foo.stiffness;
+                .4 => foo.aperture;
+                .5 => foo.noiseGain;
+                .7 => foo.blowPosition;
+                4 => foo.vibratoFreq;
+                .8 => foo.vibratoGain;
+                .5 => foo.pressure;
+
+
                 // setting the envelope time
                 500::ms => dur t => e.duration;
 
                 // running the envelope with the frequency
                 freq => foo.freq;
                 500::ms => now;
+                1 => foo.noteOn;
                 e.keyOn();
                 1000::ms => now;
                 e.keyOff();
+                1 => foo.noteOff;
                 500::ms => now;
             }
    
@@ -154,7 +189,25 @@ public class ChuckSoundGenerator : MonoBehaviour {
     {
         float returnFloat;
         Vector3 curPos;
-        curPos = headFollow.transform.InverseTransformPoint(CasA.transform.position);
+
+
+        // for finding which hand is active in MS1, or if it is MS1 at all.
+        if (MSL == MovementSystem.MS1)
+        {
+            if (CasALeft.activeSelf)
+            {
+                curPos = headFollow.transform.InverseTransformPoint(CasALeft.transform.position) / CasALeft.transform.localScale.x;
+            }
+            else
+            {
+                curPos = headFollow.transform.InverseTransformPoint(CasARight.transform.position) / CasARight.transform.localScale.x;
+            }
+        }
+        else
+        {
+            curPos = headFollow.transform.InverseTransformPoint(CasA.transform.position);
+        }
+
 
         Vector3 roundedPos = new Vector3(Mathf.RoundToInt(curPos.x),
             Mathf.RoundToInt(curPos.y),

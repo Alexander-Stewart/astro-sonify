@@ -32,6 +32,7 @@ public class NearOrigin : MonoBehaviour
     private SteamVR_Controller.Device device2;
 
     public GameObject leftHand;
+    public GameObject rightHand;
 
     // FOR MS1
 
@@ -77,11 +78,11 @@ public class NearOrigin : MonoBehaviour
 
             // getting tracked object components
             trackedLeftHand = leftHand.GetComponent<SteamVR_TrackedObject>();
-            trackedRightHand = GetComponent<SteamVR_TrackedObject>();
+            trackedRightHand = rightHand.GetComponent<SteamVR_TrackedObject>();
 
 #if ALT
         leftHandFollow = leftHand.GetComponent<VRTK_TransformFollow>();
-        rightHandFollow = GetComponent<VRTK_TransformFollow>();
+        rightHandFollow = rightHand.GetComponent<VRTK_TransformFollow>();
         leftHandFollow.enabled = false;
 #endif
         }
