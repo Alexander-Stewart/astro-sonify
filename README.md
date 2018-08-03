@@ -112,3 +112,5 @@ work hours: 9-5
 07/31/18: Updated the finished original MS to make more sense with the audio system in place, and started on recreating another movement system to make more sense. Also started to look into more ways to make sounds distinguishable through Chuck.
 
 08/01/18: Finished remaking the first Movement System, can now switch between 5 versions on the fly, but there is a loading time between each switch. Also made sounds more distinct, but will continue to work on improving them.
+
+08/02/18: Finished a timelapse of the CasA over 29 years.
