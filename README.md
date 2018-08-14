@@ -114,3 +114,7 @@ work hours: 9-5
 08/01/18: Finished remaking the first Movement System, can now switch between 5 versions on the fly, but there is a loading time between each switch. Also made sounds more distinct, but will continue to work on improving them.
 
 08/02/18: Finished a timelapse of the CasA over 29 years.
+
+08/13/18: Worked on fixing glitch in timelapse and adding color, starting looking at spaceship models and videos, and brainstorming ways 
+to implement an interactive version of the given objects. Also, need to look into way to save data that is read in from files after exiting play mode, b/c data files are 256x256x256, where as the data that I have been using is 50x50x50, and still takes 2 min+ to load. 
+Will start to apply all of CasA movements and sound to 87 tomorrow.
