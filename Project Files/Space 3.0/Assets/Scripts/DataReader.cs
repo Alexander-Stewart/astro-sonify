@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿#define EightSevenA
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
@@ -10,7 +11,13 @@ public class DataReader : MonoBehaviour {
     public Dictionary<Vector3, float> densData = new Dictionary<Vector3, float>();
     public Dictionary<Vector3, Vector3> gradientData = new Dictionary<Vector3, Vector3>();
 
+
+#if EightSevenA
+    string path = "Assets/Resources/87a_values.txt";
+#else
     string path = "Assets/Resources/DataFile.txt";
+#endif
+
 
     // Use this for initialization
     void Start () {
@@ -21,6 +28,30 @@ public class DataReader : MonoBehaviour {
         float dens;
         while (!reader.EndOfStream)
         {
+
+            // deciding how to read data depending on which SN it is.
+#if EightSevenA
+            for(int i = -256; i < 256; i++)
+            {
+                for(int j = -256; j < 256; j++)
+                {
+                    for(int k = -256; k < 256; k++)
+                    {
+                        line = reader.ReadLine();
+
+                        // getting the curPos as a vector and dens value
+                        curPos = new Vector3(i,j,k);
+                        dens = float.Parse(line);
+                        // Debug.Log("Density value for " + curPos + ": " + dens);
+
+
+                        // adding to hashtable
+                        densData.Add(curPos, dens);
+                    }
+                }
+            }
+                     
+#else
             line = reader.ReadLine();
             values = line.Split(' ');
 
@@ -32,6 +63,7 @@ public class DataReader : MonoBehaviour {
            
             // adding to hashtable
             densData.Add(curPos, dens);
+#endif
         }
         reader.Close();
 
@@ -68,15 +100,24 @@ public class DataReader : MonoBehaviour {
 
     private float partialX(float xCor, float yCor, float zCor)
     {
+
         float returnFloat;
+        float range;
+
+        // setting range 
+#if EightSevenA
+        range = 256f;
+#else
+        range = 50f;
+#endif
 
         // delta x is 1!
-        if(xCor == -50f)
+        if(xCor == -range)
         {
             Vector3 Cor = new Vector3(xCor, yCor, zCor);
             Vector3 forwardCor = new Vector3(xCor + 1f, yCor, zCor);
             returnFloat = (densData[forwardCor] - densData[Cor]);
-        } else if(xCor == 50f)
+        } else if(xCor == range)
         {
             Vector3 Cor = new Vector3(xCor, yCor, zCor);
             Vector3 backwardCor = new Vector3(xCor - 1f, yCor, zCor);
@@ -96,16 +137,25 @@ public class DataReader : MonoBehaviour {
 
     private float partialY(float xCor, float yCor, float zCor)
     {
+
         float returnFloat;
+        float range;
+
+        // setting range 
+#if EightSevenA
+        range = 256f;
+#else
+        range = 50f;
+#endif
 
         // delta y is 1!
-        if (yCor == -50f)
+        if (yCor == -range)
         {
             Vector3 Cor = new Vector3(xCor, yCor, zCor);
             Vector3 forwardCor = new Vector3(xCor, yCor + 1f, zCor);
             returnFloat = (densData[forwardCor] - densData[Cor]);
         }
-        else if (yCor == 50f)
+        else if (yCor == range)
         {
             Vector3 Cor = new Vector3(xCor, yCor, zCor);
             Vector3 backwardCor = new Vector3(xCor, yCor - 1f, zCor);
@@ -123,16 +173,25 @@ public class DataReader : MonoBehaviour {
 
     private float partialZ(float xCor, float yCor, float zCor)
     {
+
         float returnFloat;
+        float range;
+
+        // setting range 
+#if EightSevenA
+        range = 256f;
+#else
+        range = 50f;
+#endif
 
         // delta z is 1!
-        if (zCor == -50f)
+        if (zCor == -range)
         {
             Vector3 Cor = new Vector3(xCor, yCor, zCor);
             Vector3 forwardCor = new Vector3(xCor, yCor, zCor + 1f);
             returnFloat = (densData[forwardCor] - densData[Cor]);
         }
-        else if (zCor == 50f)
+        else if (zCor == range)
         {
             Vector3 Cor = new Vector3(xCor, yCor, zCor);
             Vector3 backwardCor = new Vector3(xCor, yCor, zCor - 1f);
