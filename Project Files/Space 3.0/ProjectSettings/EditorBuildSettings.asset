@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Completed Movements/Flight.unity
     guid: 6a6b9329c2e85a9498da3311f8e62cf3
+  - enabled: 0
+    path: Assets/Scenes/Completed Movements/Flight For GO.unity
+    guid: 50590f50cf0f6664fb69e5b4598d731a
   m_configObjects: {}
