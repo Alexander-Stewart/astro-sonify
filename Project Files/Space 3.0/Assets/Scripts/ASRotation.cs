@@ -32,7 +32,7 @@ public class ASRotation : MonoBehaviour
 
         // getting the gradient data
         GameObject playArea = GameObject.FindGameObjectWithTag("PlayArea");
-        gradientData = playArea.GetComponent<DataReader>().gradientData;
+        //gradientData = playArea.GetComponent<DataReader>().gradientData;
 
         // getting the right hand
         rightHand = GameObject.FindGameObjectWithTag("SensorRight");

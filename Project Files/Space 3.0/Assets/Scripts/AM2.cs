@@ -47,7 +47,7 @@ public class AM2 : MonoBehaviour {
         CasA = GameObject.FindGameObjectWithTag("Origin");
 
         // getting densData
-        densData = GetComponent<DataReader>().densData;
+        //densData = GetComponent<DataReader>().data.densData;
     }
 	
 	// Update is called once per frame

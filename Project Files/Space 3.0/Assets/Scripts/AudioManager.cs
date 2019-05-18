@@ -51,7 +51,7 @@ public class AudioManager : MonoBehaviour {
         audioListener = GameObject.FindGameObjectWithTag("Ears");
 
         // getting densData
-        densData = GetComponent<DataReader>().densData;
+        //densData = GetComponent<DataReader>().densData;
 	}
 	
 	// Update is called once per frame

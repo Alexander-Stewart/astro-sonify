@@ -37,7 +37,7 @@ public class ChuckSoundGenerator : MonoBehaviour {
 
 
         GameObject playArea = GameObject.FindGameObjectWithTag("PlayArea");
-        densData = playArea.GetComponent<DataReader>().densData;
+        //densData = playArea.GetComponent<DataReader>().densData;
 
         // getting the headfollow
         headFollow = GameObject.FindGameObjectWithTag("HeadFollow");
